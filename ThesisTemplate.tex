@@ -86,201 +86,201 @@ pdfprintscaling={AppDefault}]
 
 % -------------------------------------------------------------------------
 \begin{document}
-
-\frontmatter
-
-\titleformat{\chapter}[block]{\scshape\LARGE}{\centering\chaptertitlename\  \thechapter:}{1ex}{\centering}{}
+	
+	\frontmatter
+	
+	\titleformat{\chapter}[block]{\scshape\LARGE}{\centering\chaptertitlename\  \thechapter:}{1ex}{\centering}{}
 	\titlespacing{\chapter}{0pt}{-40pt}{20pt}
-
-\titleformat{\section}[hang]{\scshape\Large}{\thesection}{1ex}{}
-    \titlespacing{\section}{0pt}{0pt}{10pt}
+	
+	\titleformat{\section}[hang]{\scshape\Large}{\thesection}{1ex}{}
+	\titlespacing{\section}{0pt}{0pt}{10pt}
 	%\titlespacing*{\section}{0pt}{-50pt}{40pt}
-
-\titleformat{\subsection}[hang]{\scshape\large}{\thesubsection}{1ex}{}
-    \titlespacing{\subsection}{0pt}{0pt}{10pt}
+	
+	\titleformat{\subsection}[hang]{\scshape\large}{\thesubsection}{1ex}{}
+	\titlespacing{\subsection}{0pt}{0pt}{10pt}
 	%\titlespacing*{\subsection}{0pt}{-50pt}{40pt}
-
-
-% -------------------------------------------------------------------------
-% -- Title Page --
-\thesistitlepage
-
-
-% --------------------------------------------------------------------------
-% -- Authorization to Submit Thesis --
-\frontmattersection{Authorization to Submit Thesis}
-\authorizationpage
-\newpage
-
-
-% --------------------------------------------------------------------------
-% -- Abstract --
-\frontmattersection{Abstract}
-\begin{center}
-	{\LARGE\textsc{Abstract}}
-\end{center}
-
-Your abstract. Note that the abstract is limited to 150 words.
-
-\newpage
-
-
-% --------------------------------------------------------------------------
-% -- Acknowledgements --
- \frontmattersection{Acknowledgements}
- \begin{center}
- 	{\LARGE\textsc{Acknowledgements}}
- \end{center}
- 
-Your acknowledgements.
-
-\newpage
-
-
-% --------------------------------------------------------------------------
-% -- Dedication --
-% \frontmattersection{Dedication}
-% \vspace*{\fill}
-% \begin{center}
-%   {\LARGE\textsc{Dedication}}
-   
-   
-% ***  Your dedication. This section is optional, per the handbook. ***
-% \end{center}
-% \vspace{\fill}
-% \newpage
-
-
-% --------------------------------------------------------------------------
-% -- Table of Contents --
-\frontmattersection{Table of Contents}
-\tableofcontents
-\newpage
-
-
-% --------------------------------------------------------------------------
-% -- List of Tables --
-% \frontmattersection{List of Tables}
-% \listoftables
-% \newpage
-
-
-% --------------------------------------------------------------------------
-% -- List of Figures --
-% \frontmattersection{List of Figures}
-% \listoffigures
-% \newpage
-
-
-% --------------------------------------------------------------------------
-% -- List of Code Listings --
-% \frontmattersection{List of Code Listings}
-% \lstlistoflistings
-% \newpage
-
-
-% --------------------------------------------------------------------------
-% -- List of Acronyms --
-% This is useful for those in fields with an excessive amount of acronyms, 
-\frontmattersection{List of Acronyms}
-\begin{center}
-	{\LARGE\textsc{List of Acronyms}}
-\end{center}
-
-% Use acronyms in a consistent manner and without spelling mistakes
-%   \acf{cogs}  Full definition of acronym
-%   \ac{cogs}   Regular usage (does the stuff [between braces])
-\begin{acronym}[CoGS ]  % Passing an acronym as argument makes other acronyms align with it. This is usually the longest acronym.
-    \acro{cogs}[CoGS]{College of Graduate Studies}
-    \acro{vm}[VM]{Virtual Machine}  % Normal version of an acronym. Usage: \ac{vm}
-    \acrodefplural{vm}[VMs]{Virtual Machines}  % Plural version of an acronym. Usage: \acp{vm}
-\end{acronym}
-
-
-
-% --------------------------------------------------------------------------
-\mainmatter  % Starts the content part of the thesis
-\setcounter{secnumdepth}{3}  % Sets depth section numbers go to. 
-% NOTE !! : There is a bug currently where they will not work at depth of 3, e.g section 1.2.3 will not display, but 1.2 will.
-
-
-
-
-% --------------------------------------------------------------------------
-% -- Introduction --
-\clearpage
-\chapter{Introduction}
-\label{Chapter:Introduction}
-% \acresetall  % Use this if you want acronyms to be fully stated upon first use again, such as in new chapters
-
-Example introduction. 
-
-Some example citations: website\cite{apache}, blog post\cite{lambert2015}, and academic paper\cite{Barham-2003}.  % Period should follow citations at end of sentence
-
-\section{Example Section}
-Section text.
-\subsection{Example Subsection}
-Subsection text. 
-
-
-\section{Examples of acronyms}
-Example of acronym: \ac{cogs}
-Using it again: \ac{cogs}
-Plural one: \acp{vm}
-
-
-
-
-% --------------------------------------------------------------------------
-% -- Summary and Conclusions --
-\chapter{Summary and Conclusions}
-\label{Chapter:SummaryAndConclusions}
-
-Example summary and conclusions. You can refer to chapters and sections using their label, e.g Chapter \ref{Chapter:Introduction}.
-
-
-
-
-% --------------------------------------------------------------------------
-% -- References --
-
-\clearpage
-\renewcommand\bibname{References} % Relabels bibliography title as "REFERENCES"
-\addcontentsline{toc}{chapter}{\textsc{\bibname}} % Adds to table of contents
-\bibliographystyle{plain}  % Sets style, plain is fine for this
-\bibliography{example-bib-file.bib}  % Name of bibliography file containing your references. It is best practice to have a separate file, as it makes it easier to share your references, make derivative works, or use the references from a prior work (e.g a prior paper that your thesis work is building on).
-
-% Examples of citing GitHub repositories:
-%   http://academia.stackexchange.com/a/14015
-%   https://github.com/blog/1840-improving-github-for-science
-%   https://guides.github.com/activities/citable-code/
-%   https://github.com/GhostofGoes/uidaho-masters-thesis/
-%   Wait, that last one is recursive...oh no. RIP poorly programmed web crawling spider.
-
-
-
-
-% --------------------------------------------------------------------------
-% -- Appendices --
-\clearpage
-\appendix  % Marks start of appendices
-
-% Appendices are done as LaTeX chapters
-\chapter{Your fist appendix}
-First appendix content
-
-% ** This is an example of a YAML file listing, but it could be anythig, e.g full experiment results, or list of equipment used. **
-% \clearpage
-% \chapter{Exercise Specification}
-% \lstinputlisting[firstline=56, firstnumber=1, language=yaml,caption=Exercise Specification]{Specifications/exercise-specification.yaml}
-
-% ** Example of a Python script code listing **
-% \clearpage
-% \chapter{vsphere-info Script Source Code}
-% \lstinputlisting[firstline=16, firstnumber=1, language=python, caption=vsphere-info script]{Code/scripts/vsphere_info.py}
-
-
-
+	
+	
+	% -------------------------------------------------------------------------
+	% -- Title Page --
+	\thesistitlepage
+	
+	
+	% --------------------------------------------------------------------------
+	% -- Authorization to Submit Thesis --
+	\frontmattersection{Authorization to Submit Thesis}
+	\authorizationpage
+	\newpage
+	
+	
+	% --------------------------------------------------------------------------
+	% -- Abstract --
+	\frontmattersection{Abstract}
+	\begin{center}
+		{\LARGE\textsc{Abstract}}
+	\end{center}
+	
+	Your abstract. Note that the abstract is limited to 150 words.
+	
+	\newpage
+	
+	
+	% --------------------------------------------------------------------------
+	% -- Acknowledgements --
+	\frontmattersection{Acknowledgements}
+	\begin{center}
+		{\LARGE\textsc{Acknowledgements}}
+	\end{center}
+	
+	Your acknowledgements.
+	
+	\newpage
+	
+	
+	% --------------------------------------------------------------------------
+	% -- Dedication --
+	% \frontmattersection{Dedication}
+	% \vspace*{\fill}
+	% \begin{center}
+	%   {\LARGE\textsc{Dedication}}
+	
+	
+	% ***  Your dedication. This section is optional, per the handbook. ***
+	% \end{center}
+	% \vspace{\fill}
+	% \newpage
+	
+	
+	% --------------------------------------------------------------------------
+	% -- Table of Contents --
+	\frontmattersection{Table of Contents}
+	\tableofcontents
+	\newpage
+	
+	
+	% --------------------------------------------------------------------------
+	% -- List of Tables --
+	% \frontmattersection{List of Tables}
+	% \listoftables
+	% \newpage
+	
+	
+	% --------------------------------------------------------------------------
+	% -- List of Figures --
+	% \frontmattersection{List of Figures}
+	% \listoffigures
+	% \newpage
+	
+	
+	% --------------------------------------------------------------------------
+	% -- List of Code Listings --
+	% \frontmattersection{List of Code Listings}
+	% \lstlistoflistings
+	% \newpage
+	
+	
+	% --------------------------------------------------------------------------
+	% -- List of Acronyms --
+	% This is useful for those in fields with an excessive amount of acronyms, 
+	\frontmattersection{List of Acronyms}
+	\begin{center}
+		{\LARGE\textsc{List of Acronyms}}
+	\end{center}
+	
+	% Use acronyms in a consistent manner and without spelling mistakes
+	%   \acf{cogs}  Full definition of acronym
+	%   \ac{cogs}   Regular usage (does the stuff [between braces])
+	\begin{acronym}[CoGS ]  % Passing an acronym as argument makes other acronyms align with it. This is usually the longest acronym.
+		\acro{cogs}[CoGS]{College of Graduate Studies}
+		\acro{vm}[VM]{Virtual Machine}  % Normal version of an acronym. Usage: \ac{vm}
+		\acrodefplural{vm}[VMs]{Virtual Machines}  % Plural version of an acronym. Usage: \acp{vm}
+	\end{acronym}
+	
+	
+	
+	% --------------------------------------------------------------------------
+	\mainmatter  % Starts the content part of the thesis
+	\setcounter{secnumdepth}{3}  % Sets depth section numbers go to. 
+	% NOTE !! : There is a bug currently where they will not work at depth of 3, e.g section 1.2.3 will not display, but 1.2 will.
+	
+	
+	
+	
+	% --------------------------------------------------------------------------
+	% -- Introduction --
+	\clearpage
+	\chapter{Introduction}
+	\label{Chapter:Introduction}
+	% \acresetall  % Use this if you want acronyms to be fully stated upon first use again, such as in new chapters
+	
+	Example introduction. 
+	
+	Some example citations: website\cite{apache}, blog post\cite{lambert2015}, and academic paper\cite{Barham-2003}.  % Period should follow citations at end of sentence
+	
+	\section{Example Section}
+	Section text.
+	\subsection{Example Subsection}
+	Subsection text. 
+	
+	
+	\section{Examples of acronyms}
+	Example of acronym: \ac{cogs}
+	Using it again: \ac{cogs}
+	Plural one: \acp{vm}
+	
+	
+	
+	
+	% --------------------------------------------------------------------------
+	% -- Summary and Conclusions --
+	\chapter{Summary and Conclusions}
+	\label{Chapter:SummaryAndConclusions}
+	
+	Example summary and conclusions. You can refer to chapters and sections using their label, e.g Chapter \ref{Chapter:Introduction}.
+	
+	
+	
+	
+	% --------------------------------------------------------------------------
+	% -- References --
+	
+	\clearpage
+	\renewcommand\bibname{References} % Relabels bibliography title as "REFERENCES"
+	\addcontentsline{toc}{chapter}{\textsc{\bibname}} % Adds to table of contents
+	\bibliographystyle{plain}  % Sets style, plain is fine for this
+	\bibliography{example-bib-file.bib}  % Name of bibliography file containing your references. It is best practice to have a separate file, as it makes it easier to share your references, make derivative works, or use the references from a prior work (e.g a prior paper that your thesis work is building on).
+	
+	% Examples of citing GitHub repositories:
+	%   http://academia.stackexchange.com/a/14015
+	%   https://github.com/blog/1840-improving-github-for-science
+	%   https://guides.github.com/activities/citable-code/
+	%   https://github.com/GhostofGoes/uidaho-masters-thesis/
+	%   Wait, that last one is recursive...oh no. RIP poorly programmed web crawling spider.
+	
+	
+	
+	
+	% --------------------------------------------------------------------------
+	% -- Appendices --
+	\clearpage
+	\appendix  % Marks start of appendices
+	
+	% Appendices are done as LaTeX chapters
+	\chapter{Your fist appendix}
+	First appendix content
+	
+	% ** This is an example of a YAML file listing, but it could be anythig, e.g full experiment results, or list of equipment used. **
+	% \clearpage
+	% \chapter{Exercise Specification}
+	% \lstinputlisting[firstline=56, firstnumber=1, language=yaml,caption=Exercise Specification]{Specifications/exercise-specification.yaml}
+	
+	% ** Example of a Python script code listing **
+	% \clearpage
+	% \chapter{vsphere-info Script Source Code}
+	% \lstinputlisting[firstline=16, firstnumber=1, language=python, caption=vsphere-info script]{Code/scripts/vsphere_info.py}
+	
+	
+	
 \end{document}
 
 % ** DO NOT PUT ANYTHING AFTER THE END OF THE DOCUMENT! **
