@@ -197,7 +197,7 @@ This thesis of \@author, submitted for the degree of \@degree\ with a Major in \
 		\begin{tabular}{p{1.5in}ll}
 			Advisor:                  & \makebox[2.5in]{\hrulefill}   & \makebox[1.5in]{\hrulefill}\\
 							          & \@advisor					  & Date\\[0.5in]
-			Committee Members:        & \makebox[2.5in]{\hrulefill}   & \makebox[1.5in]{\hrulefill}\\
+			Committee \nohyphens{Members:}        & \makebox[2.5in]{\hrulefill}   & \makebox[1.5in]{\hrulefill}\\
 		                              & \@cmone						  & Date\\[0.5in]
 		                              & \makebox[2.5in]{\hrulefill}   & \makebox[1.5in]{\hrulefill}\\
 		                              & \@cmtwo						  & Date\\[0.5in]

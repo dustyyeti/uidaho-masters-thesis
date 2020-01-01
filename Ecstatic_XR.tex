@@ -20,9 +20,30 @@
 % --------------------------------------------------------------------------
 % Packages (the class file already imports several. Importing twice usually doesn't hurt, just keep in mind for debugging)
 %\usepackage{apacite}
+
 \usepackage[latin1]{inputenc}
 \usepackage[printonlyused]{acronym} % Use [nolist,nohyperlinks] to not write list of acronyms and not put hyperlinks to entries in list.
 % ** Add any packages you want to use here **
+
+\usepackage{tgbonum}
+\usepackage{hyphenat}
+
+\usepackage{graphicx} % for figures {figure}
+\usepackage{float}
+
+\usepackage{epigraph}
+%-- special markup to fix up epiraph style
+\usepackage{etoolbox}
+\makeatletter
+\newlength\epitextskip
+%\pretocmd{\@epitext}{\em}{}{} %this makes the text entry italics
+\apptocmd{\@epitext}{\em}{}{}
+\patchcmd{\epigraph}{\@epitext{#1}\\}{\@epitext{#1}\\[\epitextskip]}{}{}
+\makeatother
+
+\setlength\epigraphrule{0pt}
+\setlength\epitextskip{2ex}
+\setlength\epigraphwidth{.8\textwidth}
 
 \makeatletter  % ** DO NOT REMOVE THIS ** (Actually, remove it, compile, and enjoy the stream of errors. Its beautiful :) )
 
@@ -30,6 +51,7 @@
 % --------------------------------------------------------------------------
 % Thesis Information
 \title{Ecstatic [X]Reality}
+%\subtitle{Expanding Consciousness with Cross Reality}
 \author{Zeth duBois}
 \thesisdegree{Master of Science}  % e.g Master of Science, Master of Engineering, etc.
 \major{Integrated Architecture and Design}  % e.g Computer Science, Computer Engineering, etc.
@@ -79,7 +101,7 @@ pdfprintscaling={AppDefault}]
 
 % Where to look for images 
 % (https://en.wikibooks.org/wiki/LaTeX/Importing_Graphics#Graphics_storage)
-% \graphicspath{ {./Figures/} }
+\graphicspath{ {./Figures/} }
 
 % Uncomment to set default style for Listings to be code (Code style is defined in .cls file)
 % \lstset{style=code}
@@ -128,6 +150,7 @@ A person may use non-invasive mental techniques of meditation, prayer, trance, a
 The ecstatic experience relates to a state of perception of self in a world of sensation. It is conceivable that that deviation from ordinary frames of reference, as shown by the recordings in the stories of shamans, religious practitioners, yogis, and scientific experimentation, is central to the benefits inherited from an altered state of mind. Evidence has shown that ecstatic ritual well-conceived can have lasting therapeutic effects for mood disorders, assist in overcoming chemical addictions, and enhance overall peace of mind.
 
 
+Accepting that ecstasy is a personal voyage wherein the individual reimagines itself in an altered world, is it also possible to direct the development of strictly external sensations to assist in the development of similar outcomes? This paper will explore the use of \textit{\ac{XR}} to craft uniquely adapted multisensory experiences. \ac{XR} is a technique that makes use of technologies of virtualization---sensory simulation of a believable world---and interaction with adaptive data processing, to include any accessible global data and real-time characteristics of the user. Accessing ecstasy with the aid of \ac{XR}, \textit{\ac{EXR}}  offers hitherto unreachable features of altered state consciousness. Chief among them is the opportunity to be observed by third parties---which is to say, empirical, and to some degree, reproducible. \ac{EXR} can be simultaneously a door to spiritual discovery, and a research tool into the workings of the conscious mind.
 
 
 \newpage
@@ -175,9 +198,9 @@ Your acknowledgments.
 
 % --------------------------------------------------------------------------
 % -- List of Figures --
-% \frontmattersection{List of Figures}
-% \listoffigures
-% \newpage
+\frontmattersection{List of Figures}
+\listoffigures
+\newpage
 
 
 % --------------------------------------------------------------------------
@@ -198,14 +221,14 @@ Your acknowledgments.
 % Use acronyms in a consistent manner and without spelling mistakes
 %   \acf{cogs}  Full definition of acronym
 %   \ac{cogs}   Regular usage (does the stuff [between braces])
-\begin{acronym}[CoGS ]  % Passing an acronym as argument makes other acronyms align with it. This is usually the longest acronym.
+\begin{acronym}[EXR]  % Passing an acronym as argument makes other acronyms align with it. This is usually the longest acronym.
 	\acro{AR}[AR]{Augmented Reality}
 	\acro{VR}[VR]{Virtual Reality}
+	%\acro{XR}[XR]{\textit{Cross Reality}}
 	\acro{XR}[XR]{Cross Reality}
 	\acro{EXR}[EXR]{Ecstatic Cross Reality}	
-    \acro{cogs}[CoGS]{College of Graduate Studies}
-    \acro{vm}[VM]{Virtual Machine}  % Normal version of an acronym. Usage: \ac{vm}
-    \acrodefplural{vm}[VMs]{Virtual Machines}  % Plural version of an acronym. Usage: \acp{vm}
+    %\acro{vm}[VM]{Virtual Machine}  % Normal version of an acronym. Usage: \ac{vm}
+    %\acrodefplural{vm}[VMs]{Virtual Machines}  % Plural version of an acronym. Usage: \acp{vm}
 \end{acronym}
 
 
@@ -223,7 +246,15 @@ Your acknowledgments.
 \clearpage
 \chapter{Introduction}
 \label{Chapter:Introduction}
-% \acresetall  % Use this if you want acronyms to be fully stated upon first use again, such as in new chapters
+%\section{A Section}
+%\subsection{A Subsection}
+%Example of acronym: \ac{cogs}
+%Using it again: \ac{cogs}
+%Plural one: \acp{vm}
+
+\acresetall  % Use this if you want acronyms to be fully stated upon first use again, such as in new chapters
+
+\epigraph {The mind is its own place, and in itself can make a heaven of hell, a hell of heaven\ldots}{John Milton, Paradise Lost}
 
 Throughout human social development, people have cultivated techniques for achieving ecstatic states of mind. For tens of thousands of years, cultures have practiced ecstatic rituals by temporarily altering the state of perception. Methods range between physically limiting/shaping access to external stimulation to internally altering neurochemical activity. Characteristics of the first pole resolve to practices of prayer, trance, or meditation, utilizing disciplines or techniques to achieve hard to reach brainwave states that minimize occlusion of extra-sensory perception. In the case of neurochemical alterations, states can be achieved via direct regulations in biochemistry. The most effective of these techniques, in terms of accessibility, intensity, and duration, are those induced by the use of powerful exogenous chemicals that radically alter sensory and cognitive processing in the mind. The effects of the methods across this spectrum have been measured in clinical studies, supporting the claim that neurochemistry, brainwave states, and the resulting neurological data visible in cognitive processing can be temporarily altered \cite{carhart-harris_neural_2012}\cite{michael_r._hagerty_case_2013}.
 
@@ -243,21 +274,78 @@ Departing from the default world---then returning. This journey is called ecstas
 \section{A Case for Ecstasy}
 The Oxford English Dictionary defines ecstasy as, ``An emotional or religious frenzy or trance-like state, originally one involving an experience of mystic self-transcendence.'' For colloquial uses, especially hyperbolic ones, ecstasy is likely employed to mean``extremely happy'' or ``thrilled.'' Etymologically, ecstasy draws from Latin meaning ``to be or stand outside oneself,'' and shares similar lineage with the word existence, ``to cause to stand.''
  
-Albert Einstein referred to ecstasy as the ``mystical emotion'' and spoke of it as ``\ldots the finest emotion of which we are capable\ldots''. He credits the inspiration of the mysterious as the source of art and science , and that ``anyone to whom this feeling [ecstasy] is alien, who is no longer capable of wonderment and lives in a state of fear, is a dead man.'' \cite{einstein1930science}
+Albert Einstein referred to ecstasy as the ``mystical emotion'' and spoke of it as ``\ldots the finest emotion of which we are capable\ldots''. He credits the inspiration of the mysterious as the source of art and science , and that ``anyone to whom this feeling [ecstasy] is alien, who is no longer capable of wonderment and lives in a state of fear, is a dead man.'' \cite{einstein_science_1930}
 
-Einstein's existential sentiment for the contact with ecstasy recalls the autobiographical writings of Edward Abey detailing his nearly monastic assignment as a park ranger in the American desert southwest in the 1960s. In his book Desert Solitaire, he emphasizes the role of joy goes beyond individual utility, suggesting that it is a requisite strategy for evolving life. 
+Einstein's existential sentiment for the contact with ecstasy recalls the autobiographical writings of Edward Abey detailing his nearly monastic assignment as a park ranger in the American desert southwest in the 1960s. In his book Desert Solitaire, he emphasizes the role of joy goes beyond individual utility, suggesting that it is a requisite strategy for survival of the species. 
 
-\subsection{Example Subsection}
-Subsection text. 
+%\epigraph{``Has joy any survival value in the operations of evolution? I suspect that it does; I suspect that the morose and fearful are doomed to quick extinction. Where there is no joy, there can be no courage; and without courage, all other virtues are useless.''}{Edward Abey, Desert Solitaire}
 
-
-\section{Examples of acronyms}
-Example of acronym: \ac{cogs}
-Using it again: \ac{cogs}
-Plural one: \acp{vm}
+\begin{quote}
+\textit{``Has joy any survival value in the operations of evolution? I suspect that it does; I suspect that the morose and fearful are doomed to quick extinction. Where there is no joy, there can be no courage; and without courage, all other virtues are useless.''}
+\end{quote}
 
 
+There is no scientific consensus on the cause of emotion, but it is generally held to be an experience generated within the nervous system, establishing a mood or mental state. In 1913, the philosopher and psychologist Moritz Geiger, a member of the Munich phenomenological school, described the nature of emotion as ``occupying the experiential side of consciousness.''\cite{mayer-gross_translation:_nodate}   
 
+Striving to establish practical frameworks, psychologists develop theoretical models to attempt to classify emotional dispositions. One such model is the emotion wheel [Figure\ref{fig:wheel}] developed by Robert Plutchik. The wheel considers eight categorical emotions arranged radially with each bipolar emotion opposed. Concentric rings of the wheel indicate three levels of intensity from mild to intense. Plutchik's wheel arranges stages of serenity with joy arriving in ecstasy.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.72\linewidth]{plutchik_wheel.png}
+	\caption{Plutchik Emotion Wheel}
+	\label{fig:wheel}
+\end{figure}
+
+Similarly, the psychiatrist and philosopher Dr. Neel Burton speaks of the positive feelings of elation as states of euphoria, arriving at the pinnacle of ecstasy. He contends that ecstasy can be a route to epiphany, a sudden and striking realization, or as the Sanskrit root implies, ``a rising wisdom.''\cite{burton_heaven_2015}
+
+This discussion reveals a problematic ambiguity. There is a strong association between ecstasy and happiness or joy, and this misdirects the vital impact of a truly ecstatic experience. The process of becoming ecstatic \emph{can be} joyful, yet drawing, for example, from the emotions in the final ring of the emotional wheel, it is easy to claim that the state of ecstatic mind, as reflected in innumerable accounts, can be equally frightful, grievous, astonishing, loathsome, or fascinating.
+
+Wilhelm Mayer-Gross was a German-born (1889) psychiatrist who wrote his doctoral thesis on the ``Phenomenology of Abnormal Emotions of Happiness.'' \cite{mayer-gross_translation:_nodate} In his analysis, he reviews the literature of self-reported ecstatic experiences, often religious, contrasting with the documentation of psychiatric patients in the throes of mania.  Mayer-Gross lays out what he considers six basic differences between ecstasy and abnormal happiness. Not to list them all here, the key feature repeated throughout is the observation that ecstasy can swell to displace the phenomena of an external world, to include one's own physical body, whereas happiness retains connection to external objects and phenomena, often as the subject or source of the state of joy itself \cite{beer_nature_2000} . Mayer-Gross refers to this total objective transformation as a dissolution of the self, and this is consistent with the overwhelming majority view from expert scientists, theologians, shaman, and ``ordinary'' people, who contend the overall effect of the ecstatic state is \emph{ego-dissolution}.
+
+As it pertains to the remainder of this writing, the heightened emotional experience of ecstasy is understood as a transformation through exhilaration, of ego-dissolution, and a temporary reprise from the ordinary perceptions of the Self-in-World.
+
+\section{Altered States}
+
+\emph{\ldots to be or stand outside oneself}
+\\
+
+As the ecstatic experience relates to an altered state of perception of Self in a world of sensation, and establishing that a departure to said state can be triggered by combinations of experimental doses of nothing (i.e., no exogenous chemicals) and doses of something (e.g., 20 micrograms of DMT), it has been remarked by practitioners, shamans, spiritual leaders, gurus and researchers alike, that psychoactive drugs can be training wheels for the nascent enlightenment achieved through meditation. The directionality of the reference insinuates a preference for meditation, perhaps as a more respectable, if not at least legal, action. The machinations of materialistic cultures being what they are, society prides itself on sober problem solving and is therefore willing to tolerate meditators, while shunning self-medicated drug-users.
+
+The idea of ``self-medicating'' is worthy of further discussion. Scientific advances in biology and organic chemistry triangulate to arrive at contemporary medical practices that condition modern people with the expectation that drugs are medicine for illness. Doctors are specialists who train in the fields of medicine, focusing in select domains or modalities. In a conventional, allopathic practice, they will analyze the complaints of patients, diagnose illness, and then select from a library of formulated solutions to manage the presumed illness, or, more frequently, only treat the symptom. Often the solutions are pharmaceutical---medicine for sick people. These proffered formulations are rarely foods or naturally occurring plants, but instead strictly regulated synthetic drugs. Many pharmaceutical synthetics emulate natural sources that may conceivably be growing in the parking lot or could be sourced from foods known to be high in the active ingredients. However, without a personal and casual relationship with healers, recommending a carefully managed diet, changes in destructive habits, or just common-sense behavior, exposes the system to unverifiable patient compliance, and professional liabilities. With the myriad dangers of our increasingly toxic environments, stressful schedules, and unhealthy habits, it is clear to see how a powerful and impersonal prescription drug culture might inevitably arise as the dominate medical ethos. This is not to say that modern medical science and synthetic pharmaceuticals do not have remarkable life-saving outcomes. Rather, the observation is of the tendency to believe exclusively in the techniques of technology as sacrosanct, approval by trusted authority, forgoing the subtler solutions presented in the natural world, which may be ancient, forgotten, or just too weird.
+
+The converging of these factors has a chilling effect on the public`s will to explore consciousness transformation through psychoactive ritual. Most countries on Earth have made entire classes of psychoactive drugs illegal. The subject matter is effectively taboo. Returning to the academic investigation of consciousness and ecstasy, one must be cautious of falling for the societal tendency of rating the ethics between meditation and [illegal] drug-use. After all, consciousness itself appears to be agnostic to technique, and therefore any judgment regarding practice should remain subjective to individual values (and the aforementioned laws).
+
+Let us observe that deviation from ordinary frames of reference, as shown by the recordings of ecstatic voyagers, may guide participants to beneficial states of mind. Evidence has shown altered mind states can have lasting therapeutic effects for mood disorders, assist in overcoming chemical addictions, and enhance overall peace of mind. With the postulate that the interplay of observing one`s \emph{self} in the world \emph{unexpectedly reframed} leads to ecstatic experiences, what are the specific ways to access ``reframing''---to alter conscious state?
+
+\subsection{affective disorder}
+
+Altering the state of mind is not exclusively a radical, nor is it exclusively an intentional process. Taken literally, altering state occurs at every instance of time as the conscious mind compares a persistent frame of reference from the cumulative past to perceptions of the present moment. Altering state is merely updating the present frame of reference. It is the intensity of alteration that qualifies for distinction as ecstatic. There are examples of ecstatic experiences that occur without the intentional or willing participation of the subject. Such an occurrence might be termed revelation when associated with beneficial foresight, or spiritual fervor. Often in the material and scientific world, spontaneous revelation is dismissed as psychosis.
+
+A 1937 paper by EW Anderson, a clinician at the Cassel psychiatric Hospital in London, documents the study of four patients with a variety of affective disorders who experience bouts of ecstasy \cite{anderson_clinical_1938}. Anderson references E Blueler`s \emph{Textbook of Psychiatry} to define ecstasy as a ``\ldots states of rapture'' in which the outer world is completely interrupted. ``The patients see the heavens open, associate with the saints, hear heavenly music, experience wonderful odours and tastes and indescribable delight of distinct sexual colouring that pervades the entire body.'' 
+
+The patients reviewed in the paper were admitted voluntarily and suffered from mild mood or personality afflictions that made them more of a nuisance than a threat to their communities. They moved through various states of psychiatric care before being referred to the hospital. While in the care of the facility, each had one or more ecstatic interludes featuring states of extraordinary calmness, bliss, and disassociation from the normal world. One patient described:
+
+\begin{quote}
+\textit{``There seemed a trembling vibration over my consciousness, a veil between me and what I should know, as if I were hovering beyond a great mystery. Then a dawning sense of exquisite harmony, without being lifted into the first state of ecstasy\ldots Thought, space, and time dropped away.''}
+\end{quote}
+  
+Anderson compared the descriptions to phenomena the late 19th-century psychiatrist RM Bucke called ``cosmic consciousness.'' He concludes that patients' inner tranquility and harmony with the environment was characteristically distinguishable from states of hyper mania. These were not psychotic manic episodes, but inexplicable phases of ecstatic delight.
+A more recent paper (1987) about a much older case, neuroscientist D Landsboroug examines biblical references to ecstatic visions ascribed to the apostle Paul. In his letters to the Corinthians, Paul describes ecstatic experiences paired with ``a thorn in his flesh'' that are characterized by depersonalization, a connection to heaven, and auditory revelation [Figure \ref{fig:paul}]. Paul writes:
+
+\begin{quote}
+\textit{``I simply know that in the body or out of the body this man was caught up to paradise and heard sacred secrets which no human lips can repeat. Of an experience like that, I am prepared to boast\ldots My wealth of visions might have puffed me up, so I was given a thorn in the flesh, an angel of Satan to rack me and keep me from being puffed up. ''}\cite{bible_new_1984}
+\end{quote}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.63\linewidth]{paul.jpg}
+	\caption{Domenichino---The Ecstasy of St Paul, 17th c.}
+	\label{fig:paul}
+\end{figure}
+
+Paul's ``puffed'' up could mean too prideful, or boastful, from receiving such holy ecstasy. Realizing that he could lose touch with humble piety, he accepts his ``thorn'' as a mortal limitation, a sin physically manifest, retaining his station in the divine order. Landsboroug postulates that both the visions and the thorn were manifestations of temporal lobe epilepsy---a brain disorder that causes seizures and periods of unusual behavior or feelings.
+
+As can be imagined, the debate over the nature of St Paul's thorn has raged for nearly two thousand years. A more recent author, Fyodor Dostoevsky, also had epilepsy. Written in 1868, ``The Idiot'' tells the story of a young Russian noble returning to St Petersburg following a four-year commitment to a Swiss sanitarium for treatment of his epilepsy. Dostoevsky infuses his character with momentary ecstasy at the brink of each seizure:
 
 % --------------------------------------------------------------------------
 % -- Summary and Conclusions --
@@ -276,7 +364,7 @@ Example summary and conclusions. You can refer to chapters and sections using th
 \renewcommand\bibname{References} % Relabels bibliography title as "REFERENCES"
 \addcontentsline{toc}{chapter}{\textsc{\bibname}} % Adds to table of contents
 \bibliographystyle{plain}  % Sets style, plain is fine for this
-\bibliography{exr-zot-BIB}  % Name of bibliography file containing your references. It is best practice to have a separate file, as it makes it easier to share your references, make derivative works, or use the references from a prior work (e.g a prior paper that your thesis work is building on).
+\bibliography{exr-zot}  % Name of bibliography file containing your references. It is best practice to have a separate file, as it makes it easier to share your references, make derivative works, or use the references from a prior work (e.g a prior paper that your thesis work is building on).
 
 % Examples of citing GitHub repositories:
 %   http://academia.stackexchange.com/a/14015
