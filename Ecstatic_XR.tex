@@ -22,28 +22,32 @@
 %\usepackage{apacite}
 
 \usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
 \usepackage[printonlyused]{acronym} % Use [nolist,nohyperlinks] to not write list of acronyms and not put hyperlinks to entries in list.
 % ** Add any packages you want to use here **
 
-\usepackage{tgbonum}
+%\usepackage{tgbonum}
+\usepackage{lmodern}
+
 \usepackage{hyphenat}
 
 \usepackage{graphicx} % for figures {figure}
 \usepackage{float}
+\usepackage[font=small,labelfont=bf]{caption}
 
 \usepackage{epigraph}
 %-- special markup to fix up epiraph style
 \usepackage{etoolbox}
 \makeatletter
 \newlength\epitextskip
-%\pretocmd{\@epitext}{\em}{}{} %this makes the text entry italics
+\pretocmd{\@epitext}{\em}{}{} %this makes the text entry italics
 \apptocmd{\@epitext}{\em}{}{}
 \patchcmd{\epigraph}{\@epitext{#1}\\}{\@epitext{#1}\\[\epitextskip]}{}{}
 \makeatother
 
-\setlength\epigraphrule{0pt}
-\setlength\epitextskip{2ex}
-\setlength\epigraphwidth{.8\textwidth}
+\setlength\epigraphrule{0.5pt}
+\setlength\epitextskip{1ex}
+\setlength\epigraphwidth{.72\textwidth}
 
 \makeatletter  % ** DO NOT REMOVE THIS ** (Actually, remove it, compile, and enjoy the stream of errors. Its beautiful :) )
 
@@ -221,12 +225,13 @@ Your acknowledgments.
 % Use acronyms in a consistent manner and without spelling mistakes
 %   \acf{cogs}  Full definition of acronym
 %   \ac{cogs}   Regular usage (does the stuff [between braces])
-\begin{acronym}[EXR]  % Passing an acronym as argument makes other acronyms align with it. This is usually the longest acronym.
-	\acro{AR}[AR]{Augmented Reality}
-	\acro{VR}[VR]{Virtual Reality}
-	%\acro{XR}[XR]{\textit{Cross Reality}}
-	\acro{XR}[XR]{Cross Reality}
-	\acro{EXR}[EXR]{Ecstatic Cross Reality}	
+\begin{acronym}[ASC]  % Passing an acronym as argument makes other acronyms align with it. This is usually the longest acronym.
+	\acro{AR}[{\textup{AR}}]{Augmented Reality}
+	\acro{VR}[{\textup{VR}}]{Virtual Reality}
+	\acro{XR}[{\textup{XR}}]{Cross Reality}
+	\acro{EXR}[{\textup{EXR}}]{Ecstatic Cross Reality}
+	\acro{ASC}[{\textup{ASC}}]{Altered State of Consciousness}
+	\acrodefplural{ASC}[{\textup{ASC}}]{Altered States of Consciousness}
     %\acro{vm}[VM]{Virtual Machine}  % Normal version of an acronym. Usage: \ac{vm}
     %\acrodefplural{vm}[VMs]{Virtual Machines}  % Plural version of an acronym. Usage: \acp{vm}
 \end{acronym}
@@ -254,11 +259,17 @@ Your acknowledgments.
 
 \acresetall  % Use this if you want acronyms to be fully stated upon first use again, such as in new chapters
 
-\epigraph {The mind is its own place, and in itself can make a heaven of hell, a hell of heaven\ldots}{John Milton, Paradise Lost}
+%\epigraph {The mind is its own place, and in itself can make a heaven of hell, a hell of heaven\ldots}{John Milton, Paradise Lost}
+
+\epigraph {If the words 'life, liberty, and the pursuit of happiness' don't include the right to experiment with your own consciousness, then the Declaration of Independence isn't worth the hemp it was written on.}{Terence McKenna}
+
+\vspace{9mm}
 
 Throughout human social development, people have cultivated techniques for achieving ecstatic states of mind. For tens of thousands of years, cultures have practiced ecstatic rituals by temporarily altering the state of perception. Methods range between physically limiting/shaping access to external stimulation to internally altering neurochemical activity. Characteristics of the first pole resolve to practices of prayer, trance, or meditation, utilizing disciplines or techniques to achieve hard to reach brainwave states that minimize occlusion of extra-sensory perception. In the case of neurochemical alterations, states can be achieved via direct regulations in biochemistry. The most effective of these techniques, in terms of accessibility, intensity, and duration, are those induced by the use of powerful exogenous chemicals that radically alter sensory and cognitive processing in the mind. The effects of the methods across this spectrum have been measured in clinical studies, supporting the claim that neurochemistry, brainwave states, and the resulting neurological data visible in cognitive processing can be temporarily altered \cite{carhart-harris_neural_2012}\cite{michael_r._hagerty_case_2013}.
 
-While the entire range of technique is functional to achieving altered states of consciousness, the use of chemicals, characterized as \textit{psychoactive}, or mind-altering drugs, provide the most dramatic and sudden state changes. As we well know, a drug toxicity profile can range from extremely lethal to entirely benign, and a thorough understanding of the risks should precede any use of drugs. It has been well demonstrated that long before the advent of laboratory science, the Controlled Substances Act, and the United Nations Convention on Psychotropic Substances, that many naturally-occurring psychoactive chemicals have toxicities so low, that lethal human doses have yet to be discovered. Tryptamines are biologically safer than Tylenol by several orders of magnitude, and yet they are scheduled as the most restricted substances on Earth. However, despite the inconvenient fact that some sources for these banned chemicals spring up unbidden from the daily landscape, as open-source technology for casual harvesting, the legal status makes not only their collection and use prohibited, but also impedes the opportunity to advance scientific research.
+Test \emph{test} \emph{\textup{test}}
+
+While the entire range of technique is functional to achieving \textit{\acp{ASC}}, the use of chemicals, characterized as \textit{psychoactive}, or mind-altering drugs, provide the most dramatic and sudden state changes. As we well know, a drug toxicity profile can range from extremely lethal to entirely benign, and a thorough understanding of the risks should precede any use of drugs. It has been well demonstrated that long before the advent of laboratory science, the Controlled Substances Act, and the United Nations Convention on Psychotropic Substances, that many naturally-occurring psychoactive chemicals have toxicities so low, that lethal human doses have yet to be discovered. Tryptamines are biologically safer than Tylenol by several orders of magnitude, and yet they are scheduled as the most restricted substances on Earth. However, despite the inconvenient fact that some sources for these banned chemicals spring up unbidden from the daily landscape, as open-source technology for casual harvesting, the legal status makes not only their collection and use prohibited, but also impedes the opportunity to advance scientific research.
 
 Although psychoactive drugs can be used recreationally, the profound changes to mental state experienced are reputed to induce a type of spiritual voyage not easily dismissed as whimsy. Drugs effective at triggering conscious expansion are termed \textit{entheogen}, Greek for ``becoming divine within,'' when used with this intention. Simultaneously, the same drug used in recreational applications might be colloquially termed \textit{psychedelic}.
 
@@ -306,8 +317,7 @@ As it pertains to the remainder of this writing, the heightened emotional experi
 
 \section{Altered States}
 
-\emph{\ldots to be or stand outside oneself}
-\\
+\emph{\ldots to be or stand outside oneself}\\
 
 As the ecstatic experience relates to an altered state of perception of Self in a world of sensation, and establishing that a departure to said state can be triggered by combinations of experimental doses of nothing (i.e., no exogenous chemicals) and doses of something (e.g., 20 micrograms of DMT), it has been remarked by practitioners, shamans, spiritual leaders, gurus and researchers alike, that psychoactive drugs can be training wheels for the nascent enlightenment achieved through meditation. The directionality of the reference insinuates a preference for meditation, perhaps as a more respectable, if not at least legal, action. The machinations of materialistic cultures being what they are, society prides itself on sober problem solving and is therefore willing to tolerate meditators, while shunning self-medicated drug-users.
 
@@ -333,7 +343,7 @@ Anderson compared the descriptions to phenomena the late 19th-century psychiatri
 A more recent paper (1987) about a much older case, neuroscientist D Landsboroug examines biblical references to ecstatic visions ascribed to the apostle Paul. In his letters to the Corinthians, Paul describes ecstatic experiences paired with ``a thorn in his flesh'' that are characterized by depersonalization, a connection to heaven, and auditory revelation [Figure \ref{fig:paul}]. Paul writes:
 
 \begin{quote}
-\textit{``I simply know that in the body or out of the body this man was caught up to paradise and heard sacred secrets which no human lips can repeat. Of an experience like that, I am prepared to boast\ldots My wealth of visions might have puffed me up, so I was given a thorn in the flesh, an angel of Satan to rack me and keep me from being puffed up. ''}\cite{bible_new_1984}
+\textit{I simply know that in the body or out of the body this man was caught up to paradise and heard sacred secrets which no human lips can repeat. Of an experience like that, I am prepared to boast\ldots My wealth of visions might have puffed me up, so I was given a thorn in the flesh, an angel of Satan to rack me and keep me from being puffed up.}\cite{bible_new_1984}
 \end{quote}
 
 \begin{figure}[h!]
@@ -346,6 +356,65 @@ A more recent paper (1987) about a much older case, neuroscientist D Landsboroug
 Paul's ``puffed'' up could mean too prideful, or boastful, from receiving such holy ecstasy. Realizing that he could lose touch with humble piety, he accepts his ``thorn'' as a mortal limitation, a sin physically manifest, retaining his station in the divine order. Landsboroug postulates that both the visions and the thorn were manifestations of temporal lobe epilepsy---a brain disorder that causes seizures and periods of unusual behavior or feelings.
 
 As can be imagined, the debate over the nature of St Paul's thorn has raged for nearly two thousand years. A more recent author, Fyodor Dostoevsky, also had epilepsy. Written in 1868, ``The Idiot'' tells the story of a young Russian noble returning to St Petersburg following a four-year commitment to a Swiss sanitarium for treatment of his epilepsy. Dostoevsky infuses his character with momentary ecstasy at the brink of each seizure:
+
+\begin{quote}
+\textit{\ldots His sensation of being alive and his awareness increased tenfold at those moments, which flashed by like lightning. His mind and heart were flooded by a dazzling light. All his agitation, doubts, and worries seemed composed in a twinkling, culminating in a great calm, full of understanding\ldots}\cite{bible_new_1984}
+\end{quote}
+
+Other abnormal cognitive afflictions are known to trigger ecstatic episodes. In the article ``The Nature, Causes, and Types of Ecstasy,'' MD Beer unearths several early 20th-century psychiatry trials reflecting on schizophrenic ecstasy and the resulting elation of manic episodes of disassociation, other-worldly visitations, voices, and hallucinations \cite{beer_nature_2000}
+
+While the involuntary occurrences of affective disorders may occasion an ecstatic response in persons so afflicted, it is also well understood that a voluntary engagement with ecstasy may be actively courted with the practiced discipline of meditation.
+
+\subsection{meditation}
+
+Considering the features of meditation provides further insight into the mechanisms of conscious expanding ecstasy. For the sake of simplicity, meditation discussed here represents the collection of methods focused on changing state of mind though voluntary, sustained, disciplined techniques, to include controlled breathing, chanting, prayer, drumming, dancing, fasting, mindfulness, and silent retreat. Unlike affective disorders or psychoactive drugs, both of which overpower processing behavior in the central nervous system, the key to meditative ecstasy is non-invasive, sustained, and intentional techniques.
+
+Meditation may source a secular credo, but due to the influence of organized religion, and the literary nature of religious scholarship, documentation of meditation/prayer that is of religious or spiritual nature is widely available. The monotheistic lineages of the middle east focus almost exclusively on the historical preservation of divine revelation as received by prophets and apostles. Those references are minimally useful; perhaps best as anthropological clues as to the evolving historical importance of ecstatic ritual at the cultural level.
+ 
+While it is true that monotheists developed a monastic class that spend time in isolated prayer and study, and this undoubtedly qualifies for meditation, the Eastern spiritualities document a wide variety of technique for approaching ecstasy from an individual perspective. Yogic traditions drawing upon the ecstatic forms of meditation are thousands of years old. The Yoga-S\^{u}tra, Bhagavad Gita, Pata\~{n}jali, Vij\~{n}\^{a}nabhairava, and Pratyabhij\~{n}\^{a}hrdayam are classical yoga texts describing ecstatic meditation \cite{waelde_dissociation_2004}.
+
+For example, tradition based on the Vij\~{n}\^{a}nabhairava, a compendium of 112 yoga techniques delivered in verse, guides practitioners to control the mind through disciplined observation. Yogis learn to control state of mind by directing attention away from the senses by, for example, watching the breath, repeating mantras, or evoking visualizations. Verse 104 says to achieve happiness, the yogi should reject identification with his body in favor of the inner Self. 
+
+Lest it appear that The Vij\~{n}\^{a}nabhairava requires a practitioner to deny one part of reality, in preference for another (which the act of perceiving, by process, also must do at every moment) consider a practical example of another verse, which asks the disciple to meditate on the joy of seeing a long-missed friend, so that the mind becomes absorbed in the feeling of joy \cite{singh_vijnanabhairava_2002}.
+
+It is not necessary to rely only on the stories of ancient texts and spiritual anecdotes. A multi-institutional case study published in 2013 demonstrated that highly trained meditation practitioners are capable of generating and sustaining self-stimulating brain states. The research methods used functional MRI and EEG recordings to observe a Buddhist with 17 years of meditation practice. The research concluded five distinct features of the subject's conscious state, (1) external awareness dims, (2) internal verbalizations fade, (3) the sense of personal boundaries is altered, (4) attention is highly focused on the object of meditation, and (5) joy increases to high levels \cite{michael_r._hagerty_case_2013}.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.63\linewidth]{graph_joy.png}
+	\caption{Schematic of the reported experiences in 8 jhanas relative to resting consciousness and concentration on 2 dimensions of interest; \emph{joy or happiness}, and \emph{vigilance for external stimuli}.}
+	\label{fig:graphjoy}
+\end{figure}
+
+[Figure\ref{fig:graphjoy}]
+
+Disciplines like these achieve a practical application, by freeing the individual from undesired effects of worldly phenomenon. Can we consider a skilled meditation practitioner the beneficiary of a sustained ecstatic mind?
+
+Accepting that the disciplined intent of meditation can expand consciousness, let us consider the impact of psychoactive chemicals which portend to achieve analogous effects. 
+
+
+\subsection{entheogens}
+
+\section{A Pscychoactive History}
+
+\subsection{subs}
+
+\subsection{subs}
+
+\subsection{subs}
+
+\section{Ecstatic Novelty}
+
+\subsection{subs}
+
+% --------------------------------------------------------------------------
+% -- CHAP 2 --
+\chapter{Crossing Reality}
+\label{Chapter:CrossingReality}
+
+\section{Gathering the Senses}
+
+\subsection{subs}
 
 % --------------------------------------------------------------------------
 % -- Summary and Conclusions --
