@@ -19,6 +19,7 @@
 
 % --------------------------------------------------------------------------
 % Packages (the class file already imports several. Importing twice usually doesn't hurt, just keep in mind for debugging)
+\usepackage{apacite}
 \usepackage[latin1]{inputenc}
 \usepackage[printonlyused]{acronym} % Use [nolist,nohyperlinks] to not write list of acronyms and not put hyperlinks to entries in list.
 % ** Add any packages you want to use here **
@@ -215,7 +216,8 @@ pdfprintscaling={AppDefault}]
 	
 	Example introduction. 
 	
-	Some example citations: website\cite{apache}, blog post\cite{lambert2015}, and academic paper\cite{Barham-2003}.  % Period should follow citations at end of sentence
+	Some example citations: website\cite{lambert2015}
+	%, blog post\cite{lambert2015}, and academic paper\cite{Barham-2003}.  % Period should follow citations at end of sentence
 	
 	\section{Example Section}
 	Section text.
@@ -247,7 +249,7 @@ pdfprintscaling={AppDefault}]
 	\clearpage
 	\renewcommand\bibname{References} % Relabels bibliography title as "REFERENCES"
 	\addcontentsline{toc}{chapter}{\textsc{\bibname}} % Adds to table of contents
-	\bibliographystyle{plain}  % Sets style, plain is fine for this
+	\bibliographystyle{apacite}  % Sets style, plain is fine for this
 	\bibliography{goes}  % Name of bibliography file containing your references. It is best practice to have a separate file, as it makes it easier to share your references, make derivative works, or use the references from a prior work (e.g a prior paper that your thesis work is building on).
 	
 	% Examples of citing GitHub repositories:
