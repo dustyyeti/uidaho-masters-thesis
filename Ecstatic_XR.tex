@@ -50,7 +50,7 @@
 \usepackage[font=small,labelfont=bf]{caption}
 
 \usepackage{epigraph}
-%-- special markup to fix up epiraph style
+%-- special markup to fix up epigraph style
 \usepackage{etoolbox}
 \makeatletter
 \newlength\epitextskip
@@ -62,6 +62,10 @@
 \setlength\epigraphrule{0.5pt}
 \setlength\epitextskip{1ex}
 \setlength\epigraphwidth{.72\textwidth}
+
+%-- make \quote font smaller----
+\usepackage{relsize,etoolbox}% http://ctan.org/pkg/{relsize,etoolbox}
+\AtBeginEnvironment{quote}{\smaller}% Step font down one size relative to current font.
 
 \makeatletter  % ** DO NOT REMOVE THIS ** (Actually, remove it, compile, and enjoy the stream of errors. Its beautiful :) )
 
@@ -287,7 +291,7 @@ While the entire range of technique is functional to achieving \textit{\acp{ASC}
 
 Although psychoactive drugs can be used recreationally, the profound changes to mental state experienced are reputed to induce a type of spiritual voyage not easily dismissed as whimsy. Drugs effective at triggering conscious expansion are termed \textit{entheogen}, Greek for ``becoming divine within,'' when used with this intention. Simultaneously, the same drug used in recreational applications might be colloquially termed \textit{psychedelic}.
 
-Entheogens are useful for establishing \textit{altered states of consciousness}. A mind altered may gain access to unique inspirations and emotional insights, by temporarily disrupting ordinary sensations and perceptions and suspending preconceived notions. This results in radical \textit{disassociation} and \textit{ego-dissolution}. The experience can be so profound that some scientists have suggested that ritualistic ecstasy may have been integral to the development of human consciousness in proto man. The abductive ``Stoned Ape Hypothesis,'' advanced by Terence and Dennis McKenna, points out that mutagenic mushrooms discovered in the migrations of early savanna hominids would have had a range of effects on the intrepid ingester, from temporary improvements in visual acuity to full-blown conscious epiphany \cite{mckenna_invisible_1993}.
+Entheogens are useful for establishing \textit{altered states of consciousness}. A mind altered may gain access to unique inspirations and emotional insights, by temporarily disrupting ordinary sensations and perceptions and suspending preconceived notions. This results in radical \textit{disassociation} and \textit{ego-dissolution}. The experience can be so profound that some scientists have suggested that ritualistic ecstasy may have been integral to the development of human consciousness in proto man. The abductive Stoned Ape Hypothesis, advanced by Terence and Dennis McKenna, points out that mutagenic mushrooms discovered in the migrations of early savanna hominids would have had a range of effects on the intrepid ingester, from temporary improvements in visual acuity to full-blown conscious epiphany \cite{mckenna_invisible_1993}.
 
 Supporting evidence that something extraordinary was occurring with early human brains during this portion of the human timeline, is present in the sudden and inexplicable doubling of Homo sapiens' cranial capacity in an unprecedentedly short time. Furthermore, it is well-supported that the development of language, broad advances in tool use, and the clear development of societal hierarchical structures occur at this juncture \cite{mckenna_food_1992}.
 
@@ -297,20 +301,20 @@ Departing from the default world---then returning. This journey is called ecstas
 
 
 \section{A Case for Ecstasy}
-The Oxford English Dictionary defines ecstasy as, ``An emotional or religious frenzy or trance-like state, originally one involving an experience of mystic self-transcendence.'' For colloquial uses, especially hyperbolic ones, ecstasy is likely employed to mean``extremely happy'' or ``thrilled.'' Etymologically, ecstasy draws from Latin meaning ``to be or stand outside oneself,'' and shares similar lineage with the word existence, ``to cause to stand.''
+The Oxford English Dictionary defines ecstasy as, ``An emotional or religious frenzy or trance-like state, originally one involving an experience of mystic self-transcendence.'' For colloquial uses, especially hyperbolic ones, ecstasy is likely employed to mean ``extremely happy'' or ``thrilled.'' Etymologically, ecstasy draws from Latin meaning ``to be or stand outside oneself,'' and shares similar lineage with the word existence, ``to cause to stand.''
  
-Albert Einstein referred to ecstasy as the ``mystical emotion'' and spoke of it as ``\ldots the finest emotion of which we are capable\ldots''. He credits the inspiration of the mysterious as the source of art and science , and that ``anyone to whom this feeling [ecstasy] is alien, who is no longer capable of wonderment and lives in a state of fear, is a dead man.'' \cite{einstein_science_1930}
+Albert Einstein referred to ecstasy as the ``mystical emotion'' and spoke of it as \enquote{\ldots the finest emotion of which we are capable\ldots}. He credits the inspiration of the mysterious as the source of art and science , and that \enquote{anyone to whom this feeling [ecstasy] is alien, who is no longer capable of wonderment and lives in a state of fear, is a dead man \cite{einstein_science_1930}.}
 
 Einstein's existential sentiment for the contact with ecstasy recalls the autobiographical writings of Edward Abey detailing his nearly monastic assignment as a park ranger in the American desert southwest in the 1960s. In his book Desert Solitaire, he emphasizes the role of joy goes beyond individual utility, suggesting that it is a requisite strategy for survival of the species. 
 
 %\epigraph{``Has joy any survival value in the operations of evolution? I suspect that it does; I suspect that the morose and fearful are doomed to quick extinction. Where there is no joy, there can be no courage; and without courage, all other virtues are useless.''}{Edward Abey, Desert Solitaire}
 
 \begin{quote}
-\textit{``Has joy any survival value in the operations of evolution? I suspect that it does; I suspect that the morose and fearful are doomed to quick extinction. Where there is no joy, there can be no courage; and without courage, all other virtues are useless.''}
+{Has joy any survival value in the operations of evolution? I suspect that it does; I suspect that the morose and fearful are doomed to quick extinction. Where there is no joy, there can be no courage; and without courage, all other virtues are useless.}
 \end{quote}
 
 
-There is no scientific consensus on the cause of emotion, but it is generally held to be an experience generated within the nervous system, establishing a mood or mental state. In 1913, the philosopher and psychologist Moritz Geiger, a member of the Munich phenomenological school, described the nature of emotion as ``occupying the experiential side of consciousness.''\cite{mayer-gross_translation:_nodate}   
+There is no scientific consensus on the cause of emotion, but it is generally held to be an experience generated within the nervous system, establishing a mood or mental state. In 1913, the philosopher and psychologist Moritz Geiger, a member of the Munich phenomenological school, described the nature of emotion as ``occupying the experiential side of consciousness.\cite{mayer-gross_translation:_nodate}''   
 
 Striving to establish practical frameworks, psychologists develop theoretical models to attempt to classify emotional dispositions. One such model is the emotion wheel [Figure\ref{fig:wheel}] developed by Robert Plutchik. The wheel considers eight categorical emotions arranged radially with each bipolar emotion opposed. Concentric rings of the wheel indicate three levels of intensity from mild to intense. Plutchik's wheel arranges stages of serenity with joy arriving in ecstasy.
 
@@ -321,11 +325,11 @@ Striving to establish practical frameworks, psychologists develop theoretical mo
 	\label{fig:wheel}
 \end{figure}
 
-Similarly, the psychiatrist and philosopher Dr. Neel Burton speaks of the positive feelings of elation as states of euphoria, arriving at the pinnacle of ecstasy. He contends that ecstasy can be a route to epiphany, a sudden and striking realization, or as the Sanskrit root implies, ``a rising wisdom.''\cite{burton_heaven_2015}
+Similarly, the psychiatrist and philosopher Dr. Neel Burton speaks of the positive feelings of elation as states of euphoria, arriving at the pinnacle of ecstasy. He contends that ecstasy can be a route to epiphany, a sudden and striking realization, or as the Sanskrit root implies, ``a rising wisdom\cite{burton_heaven_2015}.''
 
 This discussion reveals a problematic ambiguity. There is a strong association between ecstasy and happiness or joy, and this misdirects the vital impact of a truly ecstatic experience. The process of becoming ecstatic \emph{can be} joyful, yet drawing, for example, from the emotions in the final ring of the emotional wheel, it is easy to claim that the state of ecstatic mind, as reflected in innumerable accounts, can be equally frightful, grievous, astonishing, loathsome, or fascinating.
 
-Wilhelm Mayer-Gross was a German-born (1889) psychiatrist who wrote his doctoral thesis on the ``Phenomenology of Abnormal Emotions of Happiness.'' \cite{mayer-gross_translation:_nodate} In his analysis, he reviews the literature of self-reported ecstatic experiences, often religious, contrasting with the documentation of psychiatric patients in the throes of mania.  Mayer-Gross lays out what he considers six basic differences between ecstasy and abnormal happiness. Not to list them all here, the key feature repeated throughout is the observation that ecstasy can swell to displace the phenomena of an external world, to include one's own physical body, whereas happiness retains connection to external objects and phenomena, often as the subject or source of the state of joy itself \cite{beer_nature_2000} . Mayer-Gross refers to this total objective transformation as a dissolution of the self, and this is consistent with the overwhelming majority view from expert scientists, theologians, shaman, and ``ordinary'' people, who contend the overall effect of the ecstatic state is \emph{ego-dissolution}.
+Wilhelm Mayer-Gross, a German-born (1889) psychiatrist, wrote his doctoral thesis on the subject of heightened emotion. In his analysis, The Phenomenology of Abnormal Emotions of Happiness, he reviews the literature of self-reported ecstatic experiences, often religious, contrasting with the documentation of psychiatric patients in the throes of mania\cite{mayer-gross_translation:_nodate}.  Mayer-Gross lays out what he considers six basic differences between ecstasy and abnormal happiness. Not to list them all here, the key feature repeated throughout is the observation that ecstasy can swell to displace the phenomena of an external world, to include one's own physical body, whereas happiness retains connection to external objects and phenomena, often as the subject or source of the state of joy itself \cite{beer_nature_2000} . Mayer-Gross refers to this total objective transformation as a dissolution of the self, and this is consistent with the overwhelming majority view from expert scientists, theologians, shaman, and ``ordinary'' people, who contend the overall effect of the ecstatic state is \emph{ego-dissolution}.
 
 As it pertains to the remainder of this writing, the heightened emotional experience of ecstasy is understood as a transformation through exhilaration, of ego-dissolution, and a temporary reprise from the ordinary perceptions of the Self-in-World.
 
@@ -345,19 +349,19 @@ Let us observe that deviation from ordinary frames of reference, as shown by the
 
 Altering the state of mind is not exclusively a radical, nor is it exclusively an intentional process. Taken literally, altering state occurs at every instance of time as the conscious mind compares a persistent frame of reference from the cumulative past to perceptions of the present moment. Altering state is merely updating the present frame of reference. It is the intensity of alteration that qualifies for distinction as ecstatic. There are examples of ecstatic experiences that occur without the intentional or willing participation of the subject. Such an occurrence might be termed revelation when associated with beneficial foresight, or spiritual fervor. Often in the material and scientific world, spontaneous revelation is dismissed as psychosis.
 
-A 1937 paper by EW Anderson, a clinician at the Cassel psychiatric Hospital in London, documents the study of four patients with a variety of affective disorders who experience bouts of ecstasy \cite{anderson_clinical_1938}. Anderson references E Blueler`s \emph{Textbook of Psychiatry} to define ecstasy as a ``\ldots states of rapture'' in which the outer world is completely interrupted. ``The patients see the heavens open, associate with the saints, hear heavenly music, experience wonderful odours and tastes and indescribable delight of distinct sexual colouring that pervades the entire body.'' 
+A 1937 paper by EW Anderson, a clinician at the Cassel psychiatric Hospital in London, documents the study of four patients with a variety of affective disorders who experience bouts of ecstasy \cite{anderson_clinical_1938}. Anderson references E Blueler's Textbook of Psychiatry to define ecstasy as a ``\ldots states of rapture'' in which the outer world is completely interrupted. \enquote{The patients see the heavens open, associate with the saints, hear heavenly music, experience wonderful odours and tastes and indescribable delight of distinct sexual colouring that pervades the entire body.} 
 
 The patients reviewed in the paper were admitted voluntarily and suffered from mild mood or personality afflictions that made them more of a nuisance than a threat to their communities. They moved through various states of psychiatric care before being referred to the hospital. While in the care of the facility, each had one or more ecstatic interludes featuring states of extraordinary calmness, bliss, and disassociation from the normal world. One patient described:
 
 \begin{quote}
-\textit{``There seemed a trembling vibration over my consciousness, a veil between me and what I should know, as if I were hovering beyond a great mystery. Then a dawning sense of exquisite harmony, without being lifted into the first state of ecstasy\ldots Thought, space, and time dropped away.''}
+{There seemed a trembling vibration over my consciousness, a veil between me and what I should know, as if I were hovering beyond a great mystery. Then a dawning sense of exquisite harmony, without being lifted into the first state of ecstasy\ldots Thought, space, and time dropped away.}
 \end{quote}
   
 Anderson compared the descriptions to phenomena the late 19th-century psychiatrist RM Bucke called ``cosmic consciousness.'' He concludes that patients' inner tranquility and harmony with the environment was characteristically distinguishable from states of hyper mania. These were not psychotic manic episodes, but inexplicable phases of ecstatic delight.
 A more recent paper (1987) about a much older case, neuroscientist D Landsboroug examines biblical references to ecstatic visions ascribed to the apostle Paul. In his letters to the Corinthians, Paul describes ecstatic experiences paired with ``a thorn in his flesh'' that are characterized by depersonalization, a connection to heaven, and auditory revelation [Figure \ref{fig:paul}]. Paul writes:
 
 \begin{quote}
-\textit{I simply know that in the body or out of the body this man was caught up to paradise and heard sacred secrets which no human lips can repeat. Of an experience like that, I am prepared to boast\ldots My wealth of visions might have puffed me up, so I was given a thorn in the flesh, an angel of Satan to rack me and keep me from being puffed up.}\cite{bible_new_1984}
+{I simply know that in the body or out of the body this man was caught up to paradise and heard sacred secrets which no human lips can repeat. Of an experience like that, I am prepared to boast\ldots My wealth of visions might have puffed me up, so I was given a thorn in the flesh, an angel of Satan to rack me and keep me from being puffed up.}\cite{bible_new_1984}
 \end{quote}
 
 \begin{figure}[h!]
@@ -372,10 +376,10 @@ Paul's ``puffed'' up could mean too prideful, or boastful, from receiving such h
 As can be imagined, the debate over the nature of St Paul's thorn has raged for nearly two thousand years. A more recent author, Fyodor Dostoevsky, also had epilepsy. Written in 1868, \emph{The Idiot} tells the story of a young Russian noble returning to St Petersburg following a four-year commitment to a Swiss sanitarium for treatment of his epilepsy. Dostoevsky infuses his character with momentary ecstasy at the brink of each seizure:
 
 \begin{quote}
-\textit{\ldots His sensation of being alive and his awareness increased tenfold at those moments, which flashed by like lightning. His mind and heart were flooded by a dazzling light. All his agitation, doubts, and worries seemed composed in a twinkling, culminating in a great calm, full of understanding\ldots}\cite{bible_new_1984}
+{\ldots His sensation of being alive and his awareness increased tenfold at those moments, which flashed by like lightning. His mind and heart were flooded by a dazzling light. All his agitation, doubts, and worries seemed composed in a twinkling, culminating in a great calm, full of understanding\ldots}\cite{bible_new_1984}
 \end{quote}
 
-Other abnormal cognitive afflictions are known to trigger ecstatic episodes. In the article ``The Nature, Causes, and Types of Ecstasy,'' MD Beer unearths several early 20th-century psychiatry trials reflecting on schizophrenic ecstasy and the resulting elation of manic episodes of disassociation, other-worldly visitations, voices, and hallucinations \cite{beer_nature_2000}
+Other abnormal cognitive afflictions are known to trigger ecstatic episodes. In the article, The Nature, Causes, and Types of Ecstasy, MD Beer unearths several early 20th-century psychiatry trials reflecting on schizophrenic ecstasy and the resulting elation of manic episodes of disassociation, other-worldly visitations, voices, and hallucinations \cite{beer_nature_2000}
 
 While the involuntary occurrences of affective disorders may occasion an ecstatic response in persons so afflicted, it is also well understood that a voluntary engagement with ecstasy may be actively courted with the practiced discipline of meditation.
 
@@ -419,7 +423,7 @@ Dr. Hofmann joined the pharmaceutical-chemical department of Sandoz Laboratories
 In the handling of the chemicals in the lab on the day of the reboot, Hoffman incidentally absorbed compound from the crystallized tartrate salt product. He sent the following report to the head of the lab, Arthur Stoll:
 
 \begin{quote}
-\textit{``Last Friday, April 16, 1943, I was forced to interrupt my work in the laboratory in the middle of the afternoon and proceed home, being affected by a remarkable restlessness, combined with a slight dizziness. At home, I lay down and sank into a not unpleasant intoxicated-like condition, characterized by an extremely stimulated imagination. In a dreamlike state, with eyes closed (I found the daylight to be unpleasantly glaring), I perceived an uninterrupted stream of fantastic pictures, extraordinary shapes with intense, kaleidoscopic play of colors. After some two hours, this condition faded away.''}\cite{hofmann_lsd:_1980}
+{Last Friday, April 16, 1943, I was forced to interrupt my work in the laboratory in the middle of the afternoon and proceed home, being affected by a remarkable restlessness, combined with a slight dizziness. At home, I lay down and sank into a not unpleasant intoxicated-like condition, characterized by an extremely stimulated imagination. In a dreamlike state, with eyes closed (I found the daylight to be unpleasantly glaring), I perceived an uninterrupted stream of fantastic pictures, extraordinary shapes with intense, kaleidoscopic play of colors. After some two hours, this condition faded away.}\cite{hofmann_lsd:_1980}
 \end{quote}
 
 Hoffman had unintentionally become the first person on Earth to have an acid trip. His report to Professor Stoll a few days later demonstrates the well-documented occurrence of \emph{closed-eye hallucinations}. In psychedelic drug culture, hallucinations are frequently a goal of recreational drug users. Fanciful, colorful, elaborate, the styles of visual hallucinations are the hallmark signature of psychedelic art and memorabilia. 
@@ -434,7 +438,7 @@ Within 40 minutes, feelings of anxiety, dizziness, and visual distortions began.
 
 
 \begin{quote}
-\textit{``Exhausted, I then slept, to awake next morning refreshed, with a clear head, though still somewhat tired physically. A sensation of well-being and renewed life flowed through me. Breakfast tasted delicious and gave me extraordinary pleasure. When I later walked out into the garden, in which the sun shone now after a spring rain, everything glistened and sparkled in a fresh light. The world was as if newly created. All my senses vibrated in a condition of highest sensitivity, which persisted for the entire day.''}\cite{hofmann_lsd:_1980}
+{Exhausted, I then slept, to awake next morning refreshed, with a clear head, though still somewhat tired physically. A sensation of well-being and renewed life flowed through me. Breakfast tasted delicious and gave me extraordinary pleasure. When I later walked out into the garden, in which the sun shone now after a spring rain, everything glistened and sparkled in a fresh light. The world was as if newly created. All my senses vibrated in a condition of highest sensitivity, which persisted for the entire day.}\cite{hofmann_lsd:_1980}
 \end{quote}
 
 
@@ -455,7 +459,7 @@ Within 40 minutes, feelings of anxiety, dizziness, and visual distortions began.
 The dissidence of comparing fun-loving hallucinating psychedelic trips to the ecstatic experience of ritualistic entheogen trance is reflected on by Ralph Metzner, a pioneer in psychological and cross-cultural studies of consciousness expansion. He is a psychotherapist and professor emeritus at the California Institute of Integral Studies. In his 2017 publication, \emph{Entheogens: Toward an Expanded Worldview for Our Time} he writes,
 
 \begin{quote}
-\textit{``Whereas the terminology of psychedelics has acquired spurious cultural associations of `tripping,' the historically primal concept of consciousness expansion has two advantages. One, it connects psychedelic drugs with other modes of consciousness expansion, such as meditation and creative visioning; and two, it suggests contrasting comparison with the consciousness contraction involved in concentration and focus.''}\cite{metzner_entheogenesis:_2017}
+{Whereas the terminology of psychedelics has acquired spurious cultural associations of `tripping,' the historically primal concept of consciousness expansion has two advantages. One, it connects psychedelic drugs with other modes of consciousness expansion, such as meditation and creative visioning; and two, it suggests contrasting comparison with the consciousness contraction involved in concentration and focus.}\cite{metzner_entheogenesis:_2017}
 \end{quote}
 
 Whether drug use helps an acolyte to learn the routes to achieve ecstatic meditation, or meditation encourages or works in tandem with entheogenic drug ritual, it is not the focus of this work to take up the position on the primacy of one of these positions over another. Such debate is best left to philosophers, and while we must bear it, legal states who deem it their right to mediate.
@@ -488,9 +492,33 @@ Sadly, the onslaught of questing visitors brought the attention of the Mexican p
 
 In roughly the same timeframe, the psychologist Humphrey Osmond had established a hallucinogenic drug study at the Weyburn Mental Hospital in Saskatchewan. Osmond had worked for a few years with mescaline and then transitioned to treating alcoholics with LSD. Of 2000 patients treated, Osmond reported that 40-45\% did not return to drinking after one year \cite{dyck_hitting_2006}.
 
+Aldous Huxley, the British writer, known for the epically dystopian novel \emph{Brave New World}, had learned of mescaline and Dr. Osmond. He established a correspondence with Osmond, then, in 1953, Osmond introduced Huxley to the substance. \emph{The Doors of Perception} was published the following year; a 63-page philosophical essay detailing his trip.
 
+In their subsequent friendship and correspondence, we witness the birth of the term psychedelic. Osmond instigated a dialog with the writer in search of a name for the effect of LSD on the mind. Huxley suggested \emph{phanerothyme}, from the Greek for ``to show'' and ``spirit,'' then promoted the term with a rhyme \enquote{To make this mundane world sublime, Take half a gram of phanerothyme.} Osmond countered with \emph{psychedelic}, from the Greek \emph{psyche} ``mind'' or ``soul'' and \emph{deloun}, ``show'', demonstrated in the shibboleth \enquote{To fathom Hell or soar angelic, Just take a pinch of psychedelic.} Osmond announced the new term at the 1957 New York Academy of Sciences meeting. 
 
-\subsection{subs}
+\newpage
+
+\begin{figure}[h!]
+  \centering
+  \begin{subfigure}[b]{0.4\linewidth}
+    \includegraphics[width=\linewidth]{life57.png}
+    \caption{Life 1957 - Seeking the Magic Mushroom}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.4\linewidth}
+    \includegraphics[width=\linewidth]{life66.png}
+    \caption{Life 1966 - A Remarkable Mind Drug Suddenly Spells Danger}
+  \end{subfigure}
+  \caption{American's change of heart for psychedelics}
+  \label{fig:hofmann}
+\end{figure}
+
+\subsection{psychedelic revolution}
+\epigraph {Psychedelic drugs cause panic and temporary insanity---\\
+in people who have not taken them!}{Timothy Leary 1963}
+
+\vspace{9mm}
+
+Wasson's article soon attracted the attention of a notable Harvard psychologist, Dr. Timothy Leary. A colleague, Anthony Russo, confirmed the veracity of the claims, having also made the journey to Mexico. In August of 1960, Russo accompanied Leary to Cuernavaca, Mexico, where he consumed psilocybin mushrooms for the first time. Learys long-time colleague Dr. Richard Alpert (Ram Dass) stated that Leary reported on that first experience thusly: \enquote{[he] learned more about \ldots (his) brain and its possibilities\ldots more about psychology in the five hours after taking these mushrooms than\ldots in the preceding 15 years of studying and doing research in psychology.}  
 
 \subsection{subs}
 
