@@ -19,13 +19,21 @@
 
 % --------------------------------------------------------------------------
 % Packages (the class file already imports several. Importing twice usually doesn't hurt, just keep in mind for debugging)
-%\usepackage{apacite}
+
+%\usepackage{apacite} %?? having trouble getting this to work
+
+\usepackage{xcolor}
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{180,180,180}
 
 \usepackage[latin1]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[printonlyused]{acronym} % Use [nolist,nohyperlinks] to not write list of acronyms and not put hyperlinks to entries in list.
 % ** Add any packages you want to use here **
 
+\usepackage[super]{nth}
+
+%--main font
 %\usepackage{tgbonum}
 \usepackage{lmodern}
 
@@ -167,12 +175,12 @@ pdfprintscaling={AppDefault}]
 
 For tens of thousands of years, cultures have practiced ecstatic rituals. With the rise of organized religion and the rational scientific revolutions, knowledge of practices and techniques faded into myth. Ecstasy can be described as a highly charged emotional state, that is both volatile and short-lived, presenting the conscious mind with inexplicable mental visions. Contemporary western culture eschews the value of ecstatic ritual, in favor of rational problem-solving. The ecstatic experience is personal, unfathomable, and the only outward signs of its features are in the accounts of subjects relating their experiences. The ephemeral subjectivity of ecstasy presents numerous barriers for the formal investigation of the transformation of ecstasy, in both scientific credo and societal acceptance. 
 
-A person may use non-invasive mental techniques of meditation, prayer, trance, and the like, to achieve an ecstatic state of mind. Ingesting psychoactive compounds can also lead to ecstasy. Until the 20th century, these processes have been primarily held to be the domain of spiritual exploration. With parallel advances of both inorganic and organic chemistry, scientists discovered psychoactive chemicals inherent in plants reacted in the brain in unforeseen ways. Further exploration of natural compounds and fully human-made laboratory chemicals revealed the existence of neurotransmitters, demonstrating that the experience of consciousness can be directed by temporarily altering brain neurochemistry.
+A person may use non-invasive mental techniques of meditation, prayer, trance, and the like, to achieve an ecstatic state of mind. Ingesting psychoactive compounds can also lead to ecstasy. Until the \nth{20} century, these processes have been primarily held to be the domain of spiritual exploration. With parallel advances of both inorganic and organic chemistry, scientists discovered psychoactive chemicals inherent in plants reacted in the brain in unforeseen ways. Further exploration of natural compounds and fully human-made laboratory chemicals revealed the existence of neurotransmitters, demonstrating that the experience of consciousness can be directed by temporarily altering brain neurochemistry.
 
 The ecstatic experience relates to a state of perception of self in a world of sensation. It is conceivable that that deviation from ordinary frames of reference, as shown by the recordings in the stories of shamans, religious practitioners, yogis, and scientific experimentation, is central to the benefits inherited from an altered state of mind. Evidence has shown that ecstatic ritual well-conceived can have lasting therapeutic effects for mood disorders, assist in overcoming chemical addictions, and enhance overall peace of mind.
 
 
-Accepting that ecstasy is a personal voyage wherein the individual reimagines itself in an altered world, is it also possible to direct the development of strictly external sensations to assist in the development of similar outcomes? This paper will explore the use of \textit{\ac{XR}} to craft uniquely adapted multisensory experiences. \ac{XR} is a technique that makes use of technologies of virtualization---sensory simulation of a believable world---and interaction with adaptive data processing, to include any accessible global data and real-time characteristics of the user. Accessing ecstasy with the aid of \ac{XR}, \textit{\ac{EXR}}  offers hitherto unreachable features of altered state consciousness. Chief among them is the opportunity to be observed by third parties---which is to say, empirical, and to some degree, reproducible. \ac{EXR} can be simultaneously a door to spiritual discovery, and a research tool into the workings of the conscious mind.
+Accepting that ecstasy is a personal voyage wherein the individual reimagines itself in an altered world, is it also possible to direct the development of strictly external sensations to assist in the development of similar outcomes? This paper will explore the use of \textit{\ac{XR}} to craft uniquely adapted multisensory experiences. \textit{\ac{XR}} is a technique that makes use of technologies of virtualization---sensory simulation of a believable world---and interaction with adaptive data processing, to include any accessible global data and real-time characteristics of the user. Accessing ecstasy with the aid of \textit{\ac{XR}}, \textit{\ac{EXR}} offers hitherto unreachable features of altered state consciousness. Chief among them is the opportunity to be observed by third parties---which is to say, empirical, and to some degree, reproducible. \ac{EXR} can be simultaneously a door to spiritual discovery, and a research tool into the workings of the conscious mind.
 
 
 \newpage
@@ -253,6 +261,9 @@ Your acknowledgments.
 	\acro{fMRI}[{\textup{fMRI}}]{Functional Magnetic Resonance Imaging}
 	\acro{EEG}[{\textup{EEG}}]{Electroencephalography}
 	\acro{TP}[{\textup{TP}}]{Transpersonal Psychology}
+	\acro{DMN}[{\textup{DMN}}]{Default Mode Network}
+	\acro{IoT}[{\textup{IoT}}]{Internet of Things}
+	
     %\acro{vm}[VM]{Virtual Machine}  % Normal version of an acronym. Usage: \ac{vm}
     %\acrodefplural{vm}[VMs]{Virtual Machines}  % Plural version of an acronym. Usage: \acp{vm}
 \end{acronym}
@@ -365,7 +376,7 @@ The patients reviewed in the paper were admitted voluntarily and suffered from m
 {There seemed a trembling vibration over my consciousness, a veil between me and what I should know, as if I were hovering beyond a great mystery. Then a dawning sense of exquisite harmony, without being lifted into the first state of ecstasy\ldots Thought, space, and time dropped away.}
 \end{quote}
   
-Anderson compared the descriptions to phenomena the late 19th-century psychiatrist RM Bucke called ``cosmic consciousness.'' He concludes that patients' inner tranquility and harmony with the environment was characteristically distinguishable from states of hyper mania. These were not psychotic manic episodes, but inexplicable phases of ecstatic delight.
+Anderson compared the descriptions to phenomena the late \nth{19} century psychiatrist RM Bucke called ``cosmic consciousness.'' He concludes that patients' inner tranquility and harmony with the environment was characteristically distinguishable from states of hyper mania. These were not psychotic manic episodes, but inexplicable phases of ecstatic delight.
 A more recent paper (1987) about a much older case, neuroscientist D Landsboroug examines biblical references to ecstatic visions ascribed to the apostle Paul. In his letters to the Corinthians, Paul describes ecstatic experiences paired with ``a thorn in his flesh'' that are characterized by depersonalization, a connection to heaven, and auditory revelation [Figure \ref{fig:paul}]. Paul writes:
 
 \begin{quote}
@@ -379,7 +390,7 @@ A more recent paper (1987) about a much older case, neuroscientist D Landsboroug
 		\setlength{\fboxrule}{1.5pt}%
 		\fbox{\includegraphics[width=0.63\linewidth]{paul.jpg}}%
 	}%	
-	\caption{Domenichino---The Ecstasy of St Paul, 17th c.}
+	\caption{Domenichino---The Ecstasy of St Paul, \nth{17} c.}
 	\label{fig:paul}
 \end{figure}
 
@@ -391,7 +402,7 @@ As can be imagined, the debate over the nature of St Paul's thorn has raged for 
 {\ldots His sensation of being alive and his awareness increased tenfold at those moments, which flashed by like lightning. His mind and heart were flooded by a dazzling light. All his agitation, doubts, and worries seemed composed in a twinkling, culminating in a great calm, full of understanding\ldots}\cite{bible_new_1984}
 \end{quote}
 
-Other abnormal cognitive afflictions are known to trigger ecstatic episodes. In the article, The Nature, Causes, and Types of Ecstasy, MD Beer unearths several early 20th-century psychiatry trials reflecting on schizophrenic ecstasy and the resulting elation of manic episodes of disassociation, other-worldly visitations, voices, and hallucinations \cite{beer_nature_2000}
+Other abnormal cognitive afflictions are known to trigger ecstatic episodes. In the article, The Nature, Causes, and Types of Ecstasy, MD Beer unearths several early \nth{20} century psychiatry trials reflecting on schizophrenic ecstasy and the resulting elation of manic episodes of disassociation, other-worldly visitations, voices, and hallucinations \cite{beer_nature_2000}
 
 While the involuntary occurrences of affective disorders may occasion an ecstatic response in persons so afflicted, it is also well understood that a voluntary engagement with ecstasy may be actively courted with the practiced discipline of meditation.
 
@@ -414,7 +425,7 @@ For example, tradition based on the Vij\~{n}\^{a}nabhairava, a compendium of 112
 
 Lest it appear that The Vij\~{n}\^{a}nabhairava requires a practitioner to deny one part of reality, in preference for another (which the act of perceiving, by process, also must do at every moment) consider a practical example of another verse, which asks the disciple to meditate on the joy of seeing a long-missed friend, so that the mind becomes absorbed in the feeling of joy \cite{singh_vijnanabhairava_2002}.
 
-It is not necessary to rely on the stories of ancient texts and spiritual anecdotes alone. A multi-institutional case study published in 2013 demonstrated that highly trained meditation practitioners are capable of generating and sustaining self-stimulating brain states. Researchers studied a Buddhist concentration technique called jhana that induces \ac{ASC} in a series of eight sequences [Figure \ref{fig:graphjoy}]. The study methods included \ac{fMRI} and \ac{EEG} recordings to observe a Buddhist with 17 years of meditation practice. 
+It is not necessary to rely on the stories of ancient texts and spiritual anecdotes alone. A multi-institutional case study published in 2013 demonstrated that highly trained meditation practitioners are capable of generating and sustaining self-stimulating brain states. Researchers studied a Buddhist concentration technique called jhana that induces \textit{\ac{ASC}} in a series of eight sequences [Figure \ref{fig:graphjoy}]. The study methods included \textit{\ac{fMRI}} and \textit{\ac{EEG}} recordings to observe a Buddhist with 17 years of meditation practice. 
 
 The research concluded five distinct features of the subject's conscious state, (1) external awareness dims, (2) internal verbalizations fade, (3) the sense of personal boundaries is altered, (4) attention is highly focused on the object of meditation, and (5) joy increases to high levels \cite{michael_r._hagerty_case_2013}.
 
@@ -485,7 +496,7 @@ Whether drug use helps an acolyte to learn the routes to achieve ecstatic medita
 
 \section{A Pscychoactive History}
 
-From the contemporary perspective of Western Civilization, there is little to no expectation for individuals to engage states of ecstasy for beneficial personal growth. Case in point, the drug MDMA invented by German chemists in 1912, would become popularized in the 80s as Ecstasy. Subsequently, the vernacular occurrence of the word has been dominated by the reference to the drug, not the feeling or emotional state for which it was named. To casually verify this assumption, a Google Ngram publication report from 1900-2008 shows the rise in incidence for the term ecstasy to refer to the popular club drug over the emotional state, to eventually rank five times more frequent by the end of the 20th century. [Figure \ref{fig:ngram}]
+From the contemporary perspective of Western Civilization, there is little to no expectation for individuals to engage states of ecstasy for beneficial personal growth. Case in point, the drug MDMA invented by German chemists in 1912, would become popularized in the 80s as Ecstasy. Subsequently, the vernacular occurrence of the word has been dominated by the reference to the drug, not the feeling or emotional state for which it was named. To casually verify this assumption, a Google Ngram publication report from 1900-2008 shows the rise in incidence for the term ecstasy to refer to the popular club drug over the emotional state, to eventually rank five times more frequent by the end of the \nth{20} century. [Figure \ref{fig:ngram}]
 
 \begin{figure}[h!]
 	\centering
@@ -564,13 +575,13 @@ By the mid-1960s, the tide had turned against the psychedelic tricksters. The na
 
 \subsection{shamans}
 
-The chilling effect of international embargo was hardly a new chapter. As we recall, it was only the cautious and nearly accidental discoveries of the early 20th century, from laboratory chemistry, to hobbyist anthropologists, they brought both synthetic and naturally-occurring consciousness-expanding substances into public awareness. 
+The chilling effect of international embargo was hardly a new chapter. As we recall, it was only the cautious and nearly accidental discoveries of the early \nth{20} century, from laboratory chemistry, to hobbyist anthropologists, they brought both synthetic and naturally-occurring consciousness-expanding substances into public awareness. 
 
 \section{Ecstatic Novelty}
 
 The quest to explore ecstatic consciousness finds growing market support in the 21st century. An NIH survey of US adults over 18 reveals that 14.3\% of respondents practice yoga, and 14.2\% meditate.  Comparing data from 2012 to 2017, the 2017 figures are up five and ten points, respectively. The use of psychedelics is on the rise as well. LSD use increased 175\% among younger users in England and Wales between 2013 and 2015 \cite{gayle_ecstasy_2015}, and A 2004 population study in the US show over 30 million people living in the USA have used LSD, psilocybin, or mescaline. \cite{krebs_psychedelics_2013}
 
-Jules Evans, a writer, philosopher, and research fellow for the Center for the History of Emotions, finds this intersection of interests bearing on the ideas represented by \ac{TP}. A stoic philosopher, he never-the-less pens his second book publication, The Art of Losing Control: A Guide to Ecstatic Experience, Evans succinctly states, \enquote{I have decided that Western culture has a problematic relationship with ecstasy, and this narrows and impoverishes our experience of reality.}
+Jules Evans, a writer, philosopher, and research fellow for the Center for the History of Emotions, finds this intersection of interests bearing on the ideas represented by \textit{\ac{TP}}. A stoic philosopher, he never-the-less pens his second book publication, The Art of Losing Control: A Guide to Ecstatic Experience, Evans succinctly states, \enquote{I have decided that Western culture has a problematic relationship with ecstasy, and this narrows and impoverishes our experience of reality.}
 
 A school of psychology integrating spiritual and transcendent human experience with a modern psychology framework, the field was established by turn of the century thinkers William James, Carl Jung, Abraham Maslow, and Roberto Assgili. The transpersonal is defined as experiences in which the sense of identity or self extends beyond (trans) the individual or personal to encompass wider aspects of humankind, life, psyche or cosmos \cite{calijornia1993transpersonal}
 
@@ -588,39 +599,165 @@ McKenna's contentious notions aside, there are volumes of studies on the possibl
 
 It is well accepted that the astonishing advances of human knowledge owe many tributes to the sometimes dangerous exploration of the unknown. Simultaneously, there exists ample anecdote of cultural knowledge that is simply disregarded due to prejudice or ignorance. How much have non-western cultures, historical and concurrent, already known about the mind, the self, and the possible trans-selves? Modern man is prone to conceit and ethnocentrism, especially when addressing anything that appears to belong to the realm of material science.
 
-William James (1842-1910), one of the architects of TP, made his mark at Harvard, helping to establish the psychology department in the late 19th century. James is a colorful character in the history of psychology, studying first painting, before enrolling at Harvard to study chemistry and anatomy. The discipline of psychology was not discrete, but his interest in behavior lead him to study the mind and the nascent emergent field. \enquote{This is no science; it is only the hope of science,} he wrote in his 1892 survey, Psychology: Briefer Course. 
+William James (1842-1910), one of the architects of TP, made his mark at Harvard, helping to establish the psychology department in the late \nth{19} century. James is a colorful character in the history of psychology, studying first painting, before enrolling at Harvard to study chemistry and anatomy. The discipline of psychology was not discrete, but his interest in behavior lead him to study the mind and the nascent emergent field. \enquote{This is no science; it is only the hope of science,} he wrote in his 1892 survey, Psychology: Briefer Course. 
 
-To the psychedelic researcher, his 1901 book The Varieties of Religious Experience: A Study in Human Nature provides much-cited prose for the abstract handling of human consciousness.
+To the psychedelic researcher, his 1901 book, The Varieties of Religious Experience: A Study in Human Nature, provides much-cited prose for the abstract handling of human consciousness.
 
 \begin{quote}
 {Our normal waking consciousness\ldots is but one special type of consciousness, whilst all about it, parted from it by the filmiest of screens, there lie potential forms of consciousness entirely different\ldots No account of the universe in its totality can be final which leaves these other forms of consciousness quite disregarded \cite{james1961varieties}.}
 \end{quote}
 
+James' sentience about the possible fractal nature of mind was not the result of a lucid waking divinity. James had learned from the chemist and inventor Humphry Davy to use nitrous oxide to produce unexpected visions and insight into his consciousness. Based in part on his experiences huffing NO, James developed a four-point guide for defining mystical encounters \cite{popova_william_2018}.
+\nohyphens{
+
+\begin{enumerate}
+	\item Ineffability: Inexplicable, defying expression and language. Requires direct experience.
+	\item Noetic quality: True and deep insight; revelation; full of significance; durable
+	\item Transiency: Fleeting in duration; difficult to recall in detail, but recognizable in subsequent revelation
+	\item Passivity: The mystical state may be established voluntarily, but once it begins, the mystic is held beyond volition
+\end{enumerate} 
+}
+
+Neuroscience has come a long way since the James 1901 publication, but his mystical roadmap still makes handy short-shrift for wayfinding in even the most rigorous psychedelic research today.
+
+Michael Pollan's recent book, How To Change Your Mind: What the New Science of Psychedelics Teaches Us About Consciousness, Dying, Addiction, Depression, and Transcendence, references James' contributions often. From the contemporary research scene, Pollan speaks to the head of psychedelic research at Imperial College, Robin Carhart-Harris, who likens the taking of psychedelics to ``shaking a snow-globe'' to free the brain from traveling in the ruts of aged conditioning.
+
+Carhart-Harris explains that current models for understanding cognition support a feature of the brain called the default mode network. The \textit{\ac{DMN}} appears to be involved in this rut-like behavior---when anxious, insecure, or self-absorbed, the brain shows less potential activity, traveling well-established and potentially fruitless connections. A study using psilocybin on subjects with \textit{\ac{fMRI}} imaging published in 2014 concluded, \enquote{the effect of psilocybin is to relax the constraints on brain function, ascribing cognition a more flexible quality.} The imaging discovered [see figure \ref{fig:dmn}] that the DMN shuts down almost entirely. 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\linewidth]{dmn.png}
+	\caption{Brain activity measured by fMRI. In diagram (a) the subject using placebo. In diagram (b) the subject is using psilocybin}
+	\label{fig:dmn}
+\end{figure}
+
+\subsection{best practices}
+
+Eventually, in this reading, the elephant becomes too big for the room. The 1970 Controlled Substances Act became federal law, making illegal the possession and consumption of the classic psychedelics LSD, mescaline, and psilocybin. At the time of the law's passing 25 years had passed since Hofmann's fateful bicycle ride. The final 20 years had produced thousands of positive, scientifically valid reports, with ten's of thousands of human subjects high majority reporting positive reviews. Psychiatric research demonstrated positive unheard-of positive results in mentally ill and chemically addicted patients. Experiments in creative performance had provided strong evidence that psychedelics could lubricate insight, innovative thinking, and revelation.  
+
+\subsection{third wave psychedelics}
+
+\begin{snugshade*}
+{Hofmann wrote a letter in 2007 to Jobs at the behest of his friend Rick Doblin, who runs MAPS [dedicated to studying the medical and psychiatric benefits of psychedelic drugs.]\\
+Founded in 1986, the Multidisciplinary Association for Psychedelic Studies (MAPS) is a 501(c)(3) non-profit research and educational organization that develops medical, legal, and cultural contexts for people to benefit from the careful uses of psychedelics and marijuana.}\\
+\emph{Healthy Normals}
+\end{snugshade*}
+
+\begin{quote}
+\textit{{Dear Mr. Steve Jobs,\\
+Hello from Albert Hofmann. I understand from media accounts that you feel LSD helped you creatively in your development of Apple computers and your personal spiritual quest. I'm interested in learning more about how LSD was useful to you.
+I'm writing now, shortly after my 101st birthday, to request that you support Swiss psychiatrist Dr. Peter Gasser's proposed study of LSD-assisted psychotherapy in subjects with anxiety associated with life-threatening illness. This will become the first LSD-assisted psychotherapy study in over 35 years.
+I hope you will help in the transformation of my problem child into a wonder child.\\
+Sincerely,\\
+A. Hofmann}}
+\end{quote}
+
+\begin{snugshade*}
+- First reboot, 1995 Germany:
+Mescaline-induced psychopathological, neuropsychological, and neurometabolic effects in normal subjects: experimental psychosis as a tool for psychiatric research.
+\end{snugshade*}
+
+\begin{snugshade*}
+- 1996, US, Strassman DMT:
+Human psychopharmacology of N,N-dimethyltryptamine
+\end{snugshade*}
+
+
+
+In April 2019, The Imperial College of London launched the world's first Centre for Psychedelic Research. Later that same year, Johns Hopkins University School of Medicine announced the opening of The Center for Psychedelic and Consciousness Research. In a statement issued by Roland Griffiths, the Hopkins center director and a professor of behavioral biology, \enquote{The center's establishment reflect a new era of research in therapeutics and the mind through studying this unique and remarkable class of pharmacological compounds.}
+
+In both of these universities, as well as Harvard, Yale, University of New Mexico, and others, research on the effects of psychedelic drugs on the conscious have been quietly conducted since Rick Strassman's seminal study at the University of New Mexico in 1996, Human psychopharmacology of N,N-dimethyltryptamine. In the meantime, several formal groups, academic, non-profit, and even social collectives, have formed to support the continued study and therapy of altered psychedelic mental states.  Yale Psychedelic Science Group, Multidisciplinary Association for Psychedelic Studies  , the Portland Psychedelic Society, Toronto Psychedelic Society, just to name a few.
+
+The Nielson Lab at the University of Minnesota conducts multidisciplinary research in the fields of neurobiology, psychiatry and informatics to treat trauma. Dr. Nielson's recent research into neurological mechanisms of altered states of consciousness and their role in promoting neuroplasticity and wellness in healthy subjects, funded in part by local community donations \cite{noauthor_nielson_nodate}. The network graph [see figure \ref{fig:therapy}] is a model of overlapping symptoms of trauma, and various psychedelic therapies that have published research suggesting a therapeutic benefit.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\linewidth]{therapy.png}	
+	\caption{Psychedelic Therapy Network diagram, Nielson Lab, University of Minnesota}
+	\label{fig:therapy}
+\end{figure}
+
+Tolerance of psychedelics for treatment and personal development is leading to changes in both law enforcement and drug policy. In recent years, the California Institute of Integral Studies has offered a certificate program in Psychedelic-Assisted Therapies and Research. CIIS provides public education about psychedelic research and the use of psychedelics in psychotherapy, as well as teaching on topics such as creativity enhancement, consciousness studies, comparative mysticism, well-being enrichment and harm reduction \cite{noauthor_ciis_nodate}.
 
 % --------------------------------------------------------------------------
-% -- CHAP 2 --
+% -- CHAP 3 --
 \chapter{Crossing Reality}
 \label{Chapter:CrossingReality}
 \epigraph {You are the universe experiencing itself.}{Alan Watts}
 
 \vspace{9mm}
 
+It may be deduced that it is the interplay of Self-in-World, and the matter in which that relationship is observed via each observer's unique perspective, that leads to transcendent experiences. If this is so, is it also possible to direct the development of strictly external sensations to elicit similar outcomes? This paper explores the use of \textit{\ac{XR}} to craft uniquely adapted multi-sensory ecstatic experiences.
+
+Cross reality is a technique that makes use of technologies of virtualization---sensory simulation of a believable world---and interaction with adaptive data processing, to include any accessible global data and real-time characteristics of the user. Unlike AR augmented reality, XR employs, among other features, a degree of artificial intelligence (AI). Objects in XR have adaptive routines---situational awareness. For example, an AR cat can sit on the floor, the dinner table, or in the center of your plate---it is ambivalent to its lack of decorum. If the cat were a denizen of the \ac{XR} universe, it might instead hack into your \textit{\ac{IoT}} doorbell to get you up from the dinner table so it can 'eat' your sushi while you are distracted.
+
+The example seems perhaps glib but is never-the-less appropriate. Harnessing the potentially limitless data of the internet, distributed or \emph{edge computing}, and immersive human interface, \ac{XR} enables the technological animation of the environment as character. The state of technology today stands at the threshold of a new paradigm in shaping reality.
+
+
 \section{Gathering the Senses}
 
-\subsection{subs}
+\begin{quote}
+{
+\textit{Bounding through the world at a jog}, your bones register a rhythmic impact of earth against your form, while a concert of finely detailed muscular contractions press you forward with adaptive precision. Your heading brings updates, at 1000 times per second, the coherent light of the sun, pressed into the infinite reflections of every material existing beyond above and below, into a warm omni-directional ambient radiance--you can read even the shadow-side of every boulder, tree, and blade of grass. Your picture of the world, sweeping 180 degrees, bits of data concatenated from the buzz of 3 million excited nerve fibers crammed into an area 1/20th of 1\% of your body's surface area. For that report from the outside world to register anything beyond chaotic noise, fifty percent of your cortex is dedicated to processing visual information.
 
+A vibration comes through the air, tunneling through first your right ear, then, with detectable distinction in time and tonality, your left. You deftly halt forward progress, crouching low in tall grasses, hand reflexively shifting to a throwing grip on the javelin. The acoustical pattern is familiar, and the method of the report tells you that a group of game fowl is stirring, probably just out of sight over the ridge to the right of your current heading. Are they aware of your presence as you are of theirs? Is their stirring a reaction to your disturbance, or some other third-body causality?
+
+A breeze lifts tiny hairs on your arms, signaling a delicate shift in the non-corporeal medium of invisible fluid air, moving across this plane where your existence is registered. Like the acoustical signal, the passage of this movement also implies directionality, and without much conscious effort, a picture of the world becomes clearer. For the warm slanting rays of the Sun have dimmed perceptibly as you take in the scene, and combined with the sudden breeze, you know that night is mounting to draw a curtain across the sky, diminishing your effectiveness, and drive you to seek shelter.
+ 
+But here and now, at this moment, your awareness reveals that you are downwind of the squawking animals, who, like so many other creatures, are entering an excited active phase, as the Sun dips toward the horizon. You know these wild turkeys will line up, and march with the Sun at their backs, in formation, rounding up insects from the waving grasses for a delicious snack. In moments, they will appear to you atop the hill.
+}
+\end{quote}
+\section{Coding}
+
+\epigraph{Information is just bits of data. Knowledge is putting them together. Wisdom is transcending them.}{Ram Dass}
+
+Excluding periods of unconsciousness or trauma, most people have the perception of a reasonably continuous storyline without breaks and inconsistencies. Like a comet, details of the past fade to transparency, the further down the tail one traces from the present. 
+
+Past experiences are more than just records of deeds and actions gone by; they are also filters to the present---providing an interpretation of our symbolic representation of the present and future.
+
+This bias projection, or bias confirmation, is a vital component in delivering the conscious being's perseverant need for consistency
 % --------------------------------------------------------------------------
 % -- CHAP 3 --
 \chapter{Building Reality}
 \label{Chapter:BuildingReality}
-\epigraph {A quote.}{Joe Blow}
+\epigraph {The mind is its own place, and in itself can make a heaven of hell, a hell of heaven\ldots}{John Milton, Paradise Lost}
 
 \vspace{9mm}
 
+The world perceived is a complex interaction of raw sensory stimuli and state of mind, referenced to personal experience through a time-based persistence. The resulting product is a subjective reality. As described in Best Practices, the features of \emph{Set} and \emph{Setting} are parameters that influence the resulting sense of \emph{what is real}.
 
-\section{section}
+Ecstasy is a process of experiencing exhilaration; a journey of heightened emotions and altered perceptions resulting in a reprieve from ordinary expectations. When considering feasible sources for ecstatic elevation, the catalysts of meditation and psychedelic mediation are, once `ingested', a function of physiology, and therefore, internalized processes. An ecstatic sojourner does not need sensation from eyes to `see.' Fully sighted persons can block all light from entering visual systems, thereby join blind persons in having wonderous visions \cite{sacks_hallucinations_2012}. Altered states perturb the sensations and perceptions of sensory data, even when there is none transducted from the expected channels to the outside world. However, physical senses should not be discounted. What happens if the world sensations are \emph{altered} before	they emanate from the `real world?'
 
-\subsection{subs}
+Within the technology of \textit{\ac{XR}} lies an opportunity for refined influence on set and setting. Contemporary technologies of virtual world-building place fine-tuned controlled of an immersive sensory setting in easy reach, and the adaptive intelligence promised in deep learning emboldens features of the perceived world into conscious character. Conceiving of technique that enables real-time phenomenal hallucinations is not far-fetched. Here we postulate it is possible to use the technology of XR to elicit an ecstatic response---from the outside in.
+ 
+\textit{\ac{EXR}} offers hitherto unreachable features of altered state consciousness. Chief among them is the opportunity to be observed by third parties---which is to say, empirical, and to some degree, reproducible. \ac{EXR} can be simultaneously a door to deep personal discovery, and a research tool into the workings of the conscious mind.
+
+
+\section{Ecstatic Simulation}
+
+Since time immemorial, humans have been using representational imagery to explain personal experiences, to record events, and to communicate ideas. Although art for art's sake is not to be diminished, the power of symbols as a tool for elevating understanding and advancing abstract thinking is undeniable.
+
+Archeological discoveries reveal that prehistoric peoples have sought to represent the occurrences of ecstatic altered states. As the collective skill in artistic representation and the technological refinement in the variety of media tools advanced throughout the ages, the ability for image rendering steadily increased to a degree of complete realism. By the time of the Renaissance, the mastery of perspective technique with the versatility of oil painting, and an exquisite understanding of human physiology, it became second nature to craft evocative single-frame stories in painting, sculpture and fresco, depicting either real or imagined compositions of great significance.  
+
+With the perfection of representational art achieved, the subsequent art movements of impressionism, surrealism, cubism, and the entire range of symbolic deconstruction beginning in the \nth{19} century, were possibly a logic anecdote for the shackles of reality. Salvador Dali created compositions that were at once completely real in form, yet wholly fantastic in set and setting.
+
+Once the technology of art allowed for altering representation in time, with sequential imagery, filmmakers had access to storyline in four dimensions. Now that producing 4-dimensional media is child's play, a global internet pushes HD quality video into every hand that beckons. That on-demand media has a measurable impact on the way reality is rendered moment-to-moment in the industrialized world, is not a hard concept to grasp. Henceforth, we are immersed.
+Considering humanity's enthusiasm for representational art, and the provocative influence of ecstatic altered state consciousness, it is not surprising that there is a considerable body of \emph{visionary art} to be found. Putting conventional tools of the \nth{20} century to the task, it is inevitable that a majority of ecstatic art follows a one-way, methodical \emph{formulaic} process. 
+
+
+\subsection{formulaic}
+
+Formulaic artforms are processes wherein the resulting forms are established and bound by selected input parameters. While it is not possible for a painting, or a musical score, or television show to program everything about a viewer's experience, it is practical to suggest that the media presents its content at the surface, without input from the audience. The result is unidirectional; no dialog is taking place, even if the audience is eager to comment.
+Formulaic ecstatic art can be \emph{linear} or \emph{parametric}.
+
+\subparagraph{linear}
+
+Linear artforms are bound by the direct manipulation of medium in time. The parameters for input are frozen in the result, creating an indelible product. There is one direction forward in the creation of the work, and all manipulations are found in the minds of the creators, regardless of the kind of editing tools the medium uses. For example, painting on a canvas with oil paints allows editing in physical layers, through the process of time. One could philosophize the work is composed of layers of time, as equally as layers of paint. Only one painting exists at any time, and perhaps the artist will proclaim it complete at some arbitrary phase. 
+
+Sequential art is a linear art form as well, as long as the parameters for creating it are, again, composed in the minds of the makers, using the tools of the media directly. In this case, lighting, lenses, light-sensitive medium. Even a computer using non-linear editing software for adjusting the sequence of frames. The resulting video is a linear product, with one expressed intention for reading its message.
+
+Ecstatic art in linear mediums such as these are snapshot emulations of conceived altered mind states. Representing the features of altered reality, the tools of linear art are transformations of space, scale, perspective, and time. They can be ``trippy'' and evocative, even reminiscent of an audience's recollections, but they are not likely to legitimately trigger a uniquely ecstatic voyage on there own.  
+
 
 % --------------------------------------------------------------------------
 % -- Summary and Conclusions --
