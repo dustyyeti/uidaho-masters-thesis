@@ -25,7 +25,7 @@
 %\usepackage[sorting=none]{biblatex}
 \usepackage{xcolor}
 \usepackage{framed}
-\definecolor{shadecolor}{RGB}{180,180,180}
+\definecolor{shadecolor}{RGB}{192,192,192}
 
 \usepackage[latin1]{inputenc}
 \usepackage[T1]{fontenc}
@@ -101,7 +101,7 @@
 \setcounter{secnumdepth}{0}
 
 % Sets what level of sections show up in the table of contents. 0 = sections, 1 = subsections, 2 = subsubsections, etc.
-\setcounter{tocdepth}{1}
+\setcounter{tocdepth}{2}
 
 
 % Configure the PDF output (Most of this is optional, it just adds metadata to the PDF)
@@ -181,7 +181,7 @@ A person may use non-invasive mental techniques of meditation, prayer, trance, a
 The ecstatic experience relates to a state of perception of self in a world of sensation. It is conceivable that that deviation from ordinary frames of reference, as shown by the recordings in the stories of shamans, religious practitioners, yogis, and scientific experimentation, is central to the benefits inherited from an altered state of mind. Evidence has shown that ecstatic ritual well-conceived can have lasting therapeutic effects for mood disorders, assist in overcoming chemical addictions, and enhance overall peace of mind.
 
 
-Accepting that ecstasy is a personal voyage wherein the individual reimagines itself in an altered world, is it also possible to direct the development of strictly external sensations to assist in the development of similar outcomes? This paper will explore the use of \textit{\ac{XR}} to craft uniquely adapted multisensory experiences. \textit{\ac{XR}} is a technique that makes use of technologies of virtualization---sensory simulation of a believable world---and interaction with adaptive data processing, to include any accessible global data and real-time characteristics of the user. Accessing ecstasy with the aid of \textit{\ac{XR}}, \textit{\ac{EXR}} offers hitherto unreachable features of altered state consciousness. Chief among them is the opportunity to be observed by third parties---which is to say, empirical, and to some degree, reproducible. \ac{EXR} can be simultaneously a door to spiritual discovery, and a research tool into the workings of the conscious mind.
+Accepting that ecstasy is a personal voyage wherein the individual reimagines itself in an altered world, is it also possible to direct the development of strictly external sensations to assist in the development of similar outcomes? This paper will explore the use of \textit{\ac{XR}} to craft uniquely adapted multisensory experiences. Accessing ecstasy with \textit{\ac{EXR}} offers hitherto unreachable features of altered state consciousness. Chief among them is the opportunity to be observed by third parties---which is to say, empirical, and to some degree, reproducible. \ac{EXR} can be simultaneously a door to spiritual discovery, and a research tool into the workings of the conscious mind.
 
 
 \newpage
@@ -234,6 +234,7 @@ Your acknowledgments.
 \newpage
 
 
+
 % --------------------------------------------------------------------------
 % -- List of Code Listings --
 % \frontmattersection{List of Code Listings}
@@ -252,10 +253,12 @@ Your acknowledgments.
 % Use acronyms in a consistent manner and without spelling mistakes
 %   \acf{cogs}  Full definition of acronym
 %   \ac{cogs}   Regular usage (does the stuff [between braces])
-\begin{acronym}[EMDR]  % Passing an acronym as argument makes other acronyms align with it. This is usually the longest acronym.
+\begin{acronym}[MAPS]  % Passing an acronym as argument makes other acronyms align with it. This is usually the longest acronym.
+	\acro{AI}[{\textup{AI}}]{Artificial Intelligence}
 	\acro{AR}[{\textup{AR}}]{Augmented Reality}
 	\acro{ASC}[{\textup{ASC}}]{Altered State of Consciousness}
 	\acro{BMI}[{\textup{BMI}}]{Brain Machine Interface}	
+	\acro{CIIS}[{\textup{CIIS}}]{California Institute of Integral Studies}
 	\acro{DMN}[{\textup{DMN}}]{Default Mode Network}	
 	\acro{EEG}[{\textup{EEG}}]{Electroencephalography}
 	\acro{EMDR}[{\textup{EMDR}}]{Eye Movement Desensitization and Reprocessing}
@@ -263,9 +266,13 @@ Your acknowledgments.
 	\acro{fMRI}[{\textup{fMRI}}]{Functional Magnetic Resonance Imaging}
 	\acro{GAN}[{\textup{GAN}}]{Generative Adversarial Network}	
 	\acro{IoT}[{\textup{IoT}}]{Internet of Things}			
+	\acro{MAPS}[{\textup{MAPS}}]{Multidisciplinary Association for Psychedelic Studies}
+	\acro{MR}[{\textup{MR}}]{Mixed Reality}
+	\acro{SI}[{\textup{SI}}]{Synthetic Intelligence}	
 	\acro{TP}[{\textup{TP}}]{Transpersonal Psychology}
 	\acro{VR}[{\textup{VR}}]{Virtual Reality}
 	\acro{XR}[{\textup{XR}}]{Cross Reality}
+
 	
 
 
@@ -287,7 +294,7 @@ Your acknowledgments.
 
 % --------------------------------------------------------------------------
 \mainmatter  % Starts the content part of the thesis
-\setcounter{secnumdepth}{1}  % Sets depth section numbers go to. 
+\setcounter{secnumdepth}{2}  % Sets depth section numbers go to. 
 % NOTE !! : There is a bug currently where they will not work at depth of 3, e.g section 1.2.3 will not display, but 1.2 will.
 
 
@@ -352,11 +359,11 @@ Striving to establish practical frameworks, psychologists develop theoretical mo
 	\label{fig:wheel}
 \end{figure}
 
-Similarly, the psychiatrist and philosopher Dr. Neel Burton speaks of the positive feelings of elation as states of euphoria, arriving at the pinnacle of ecstasy. He contends that ecstasy can be a route to epiphany, a sudden and striking realization, or as the Sanskrit root implies, ``a rising wisdom\cite{burton_heaven_2015}.''
+Similarly, the psychiatrist and philosopher Dr.~Neel Burton speaks of the positive feelings of elation as states of euphoria, arriving at the pinnacle of ecstasy. He contends that ecstasy can be a route to epiphany, a sudden and striking realization, or as the Sanskrit root implies, ``a rising wisdom\cite{burton_heaven_2015}.''
 
 This discussion reveals a problematic ambiguity. There is a strong association between ecstasy and happiness or joy, and this misdirects the vital impact of a truly ecstatic experience. The process of becoming ecstatic \emph{can be} joyful, yet drawing, for example, from the emotions in the final ring of the emotional wheel, it is easy to claim that the state of ecstatic mind, as reflected in innumerable accounts, can be equally frightful, grievous, astonishing, loathsome, or fascinating.
 
-Wilhelm Mayer-Gross, a German-born (1889) psychiatrist, wrote his doctoral thesis on the subject of heightened emotion. In his analysis, The Phenomenology of Abnormal Emotions of Happiness, he reviews the literature of self-reported ecstatic experiences, often religious, contrasting with the documentation of psychiatric patients in the throes of mania\cite{mayer-gross_translation:_nodate}.  Mayer-Gross lays out what he considers six basic differences between ecstasy and abnormal happiness. Not to list them all here, the key feature repeated throughout is the observation that ecstasy can swell to displace the phenomena of an external world, to include one's own physical body, whereas happiness retains connection to external objects and phenomena, often as the subject or source of the state of joy itself \cite{beer_nature_2000} . Mayer-Gross refers to this total objective transformation as a dissolution of the self, and this is consistent with the overwhelming majority view from expert scientists, theologians, shaman, and ``ordinary'' people, who contend the overall effect of the ecstatic state is \emph{ego-dissolution}.
+Wilhelm Mayer-Gross, a German-born (1889) psychiatrist, wrote his doctoral thesis on the subject of heightened emotion. In his analysis, The Phenomenology of Abnormal Emotions of Happiness, he reviews the literature of self-reported ecstatic experiences, often religious, contrasting with the documentation of psychiatric patients in the throes of mania\cite{mayer-gross_translation:_nodate}.  Mayer-Gross lays out what he considers six basic differences between ecstasy and abnormal happiness. The key feature repeated throughout is the observation that ecstasy can swell to displace the phenomena of an external world, to include one's own physical body, whereas happiness retains connection to external objects and phenomena, often as the subject or source of the state of joy itself \cite{beer_nature_2000}. Mayer-Gross refers to this total objective transformation as a dissolution of the self, and this is consistent with the overwhelming majority view from expert scientists, theologians, shaman, and ``ordinary'' people, who contend the overall effect of the ecstatic state is \emph{ego-dissolution}.
 
 As it pertains to the remainder of this writing, the heightened emotional experience of ecstasy is understood as a transformation through exhilaration, of ego-dissolution, and a temporary reprise from the ordinary perceptions of the Self-in-World.
 
@@ -364,14 +371,26 @@ As it pertains to the remainder of this writing, the heightened emotional experi
 % -- 
 \clearpage
 
+\captionsetup{labelformat=empty}
 
 \chapter{Ecstatic Consciousness}
-\noindent
-{%
-\setlength{\fboxsep}{0pt}%
-\setlength{\fboxrule}{1.5pt}%
-\fbox{\includegraphics[width=\linewidth]{shaman_head.png}}%
-}%
+
+\captionsetup{labelformat=empty}
+\captionsetup{font=footnotesize}
+\begin{figure}[h!]
+	\centering
+	\noindent
+	{%
+	\setlength{\fboxsep}{0pt}%
+	\setlength{\fboxrule}{1.5pt}%
+	\fbox{\includegraphics[width=\linewidth]{shaman_head.png}}%
+	}%
+	\caption[Art by Cameron Gray, ``Sacrament for the Sacred Dreamers'']{\textit{``Sacrament for the Sacred Dreamers''}} 
+	\label{fig:ch2}
+\end{figure}
+\captionsetup{labelformat=simple}
+\captionsetup{font=small,labelfont=bf}
+
 \label{Chapter:EcstaticConsciousness}
 
 \emph{\ldots to be or stand outside oneself}\\
@@ -460,11 +479,13 @@ Accepting that the disciplined intent of meditation can expand consciousness, le
 
 \subsection{entheogens}
 
+\epigraph {let thy food be thy medicine and thy medicine be thy food}
+
 An entheogen is a psychoactive substance used in a spiritual or shamanic context. The term was first coined in 1979 by Ruck, Bigwood, Staples, Ott, and Wasson \cite{ruck_entheogens._1979}, meaning ``becoming the god within'' or ``becoming divine within.''  Entheogens may be directly gathered from natural plant sources, as in mushrooms or cactus flowers; may be brewed from combinations of plants, as in ayahuasca; or may be wholly synthetically derived, like LSD, MDMA, and DMT. Entheogens contain molecules closely related to endogenous neurotransmitters. 
 
 When he was sixty years old, the coincidental Father of LSD addressed the 1966 Worlds of Consciousness Conference in Heidelberg: \enquote{Mystical experiences in [my] childhood, in which Nature was altered in magical ways, had provoked questions concerning the essence of the external, material world, and chemistry was the scientific field which might afford insights into this.} Forty-two years later, Albert Hofmann died at his home in Switzerland, 102 years old.
 
-Dr. Hofmann joined the pharmaceutical-chemical department of Sandoz Laboratories in Basel as a lab chemist. He was working on synthetic derivatives of fungus ergot in 1938 when he developed a series of analogs that failed to produce the intended goals in the laboratory test animals. The formulations were abandoned for five years, until he self-initiated an informal study of one variant, LSD-25, to satisfy a lurking curiosity.
+Dr.~Hofmann [holding LSD model kit, date unknown, figure \ref{fig:hofmann}(a)] joined the pharmaceutical-chemical department of Sandoz Laboratories in Basel as a lab chemist. He was working on synthetic derivatives of fungus ergot in 1938 when he developed a series of analogs that failed to produce the intended goals in the laboratory test animals. The formulations were abandoned for five years, until he self-initiated an informal study of one variant, LSD-25, to satisfy a lurking curiosity.
 In the handling of the chemicals in the lab on the day of the reboot, Hoffman incidentally absorbed compound from the crystallized tartrate salt product. He sent the following report to the head of the lab, Arthur Stoll:
 
 \begin{quote}
@@ -479,7 +500,9 @@ Considering these stories of hallucination, whether triggered by bruising the br
 
 Turning back to the story of Albert Hoffman, three days following his unintended preeminent exposure, he returned to his lab to subject himself to a controlled experiment. Informing a lab assistant of his intentions, he cooked up another batch and measured out what he thought was a safe threshold dose of LSD. Today we know that threshold dosages are in the 10-\SI{20}{\micro\gram} range, with a ``strong'' dose falling between 150-\SI{400}{\micro\gram}. Hoffman took \SI{250}{\micro\gram}.
 
-Within 40 minutes, feelings of anxiety, dizziness, and visual distortions began. He felt in crisis, finding it difficult to speak, but was able to communicate with the assistant that he needed an escort home. On April 17, 1943, Albert Hoffman, under the influence of powerful LSD hallucinations, rode his bicycle home. In his book published in 1979, LSD, My Problem Child he describes the terrifying feelings he endured during the peak of his intoxication, an estimated two hours. Of the following day he writes, 
+Within 40 minutes, feelings of anxiety, dizziness, and visual distortions began. He felt in crisis, finding it difficult to speak, but was able to communicate with the assistant that he needed an escort home. On April 17, 1943, Albert Hoffman, under the influence of powerful LSD hallucinations, rode his bicycle home. In his book published in 1979, LSD, My Problem Child he describes the terrifying feelings he endured during the peak of his intoxication, an estimated two hours [an illustration on blotter paper commemorates this journey, figure \ref{fig:hofmann}(b)].
+
+Of the following day he writes, 
 
 
 \begin{quote}
@@ -491,7 +514,7 @@ Within 40 minutes, feelings of anxiety, dizziness, and visual distortions began.
   \centering
   \begin{subfigure}[b]{0.4\linewidth}
     \includegraphics[width=\linewidth]{hofmann_sq.jpg}
-    \caption{Dr. Albert Hofmann.}
+    \caption{Dr.~Albert Hofmann.}
   \end{subfigure}
   \begin{subfigure}[b]{0.4\linewidth}
     \includegraphics[width=\linewidth]{bicycle_day.jpg}
@@ -500,6 +523,7 @@ Within 40 minutes, feelings of anxiety, dizziness, and visual distortions began.
   \caption{LSD: Hofmann's \enquote{Problem Child}}
   \label{fig:hofmann}
 \end{figure}
+
 
 The dissidence of comparing fun-loving hallucinating psychedelic trips to the ecstatic experience of ritualistic entheogen trance is reflected on by Ralph Metzner, a pioneer in psychological and cross-cultural studies of consciousness expansion. He is a psychotherapist and professor emeritus at the California Institute of Integral Studies. In his 2017 publication, \emph{Entheogens: Toward an Expanded Worldview for Our Time} he writes,
 
@@ -537,7 +561,7 @@ Sadly, the onslaught of questing visitors brought the attention of the Mexican p
 
 In roughly the same timeframe, the psychologist Humphrey Osmond had established a hallucinogenic drug study at the Weyburn Mental Hospital in Saskatchewan. Osmond had worked for a few years with mescaline and then transitioned to treating alcoholics with LSD. Of 2000 patients treated, Osmond reported that 40-45\% did not return to drinking after one year \cite{dyck_hitting_2006}.
 
-Aldous Huxley, the British writer, known for the epically dystopian novel \emph{Brave New World}, had learned of mescaline and Dr. Osmond. He established a correspondence with Osmond, then, in 1953, Osmond introduced Huxley to the substance. \emph{The Doors of Perception} was published the following year; a 63-page philosophical essay detailing his trip.
+Aldous Huxley, the British writer, known for the epically dystopian novel \emph{Brave New World}, had learned of mescaline and Dr.~Osmond. He established a correspondence with Osmond, then, in 1953, Osmond introduced Huxley to the substance. \emph{The Doors of Perception} was published the following year; a 63-page philosophical essay detailing his trip.
 
 In their subsequent friendship and correspondence, we witness the birth of the term psychedelic. Osmond instigated a dialog with the writer in search of a name for the effect of LSD on the mind. Huxley suggested \emph{phanerothyme}, from the Greek for ``to show'' and ``spirit,'' then promoted the term with a rhyme \enquote{To make this mundane world sublime, Take half a gram of phanerothyme.} Osmond countered with \emph{psychedelic}, from the Greek \emph{psyche} ``mind'' or ``soul'' and \emph{deloun}, ``show'', demonstrated in the shibboleth \enquote{To fathom Hell or soar angelic, Just take a pinch of psychedelic.} Osmond announced the new term at the 1957 New York Academy of Sciences meeting. 
 
@@ -549,13 +573,13 @@ in people who have not taken them!}{Timothy Leary 1963}
 
 \vspace{9mm}
 
-Wasson's article soon attracted the attention of a notable Harvard psychologist, Dr. Timothy Leary. A colleague, Anthony Russo, confirmed the veracity of the claims, having also made the journey to Mexico. In August of 1960, Russo accompanied Leary to Cuernavaca, Mexico, where he consumed psilocybin mushrooms for the first time. Of that first encounter, Leary is know to have said that he \enquote{learned more about\ldots (his) brain and its possibilities\ldots more about psychology in the five hours after taking these mushrooms than\ldots in the preceding 15 years of studying and doing research in psychology \cite{dassfierce}.} 
+Wasson's article soon attracted the attention of a notable Harvard psychologist, Dr.~Timothy Leary. A colleague, Anthony Russo, confirmed the veracity of the claims, having also made the journey to Mexico. In August of 1960, Russo accompanied Leary to Cuernavaca, Mexico, where he consumed psilocybin mushrooms for the first time. Of that first encounter, Leary is know to have said that he \enquote{learned more about\ldots (his) brain and its possibilities\ldots more about psychology in the five hours after taking these mushrooms than\ldots in the preceding 15 years of studying and doing research in psychology \cite{dassfierce}.} 
 
 Within the year of his preeminent ecstatic psilocybin experience, Leary and his colleague Richard Alpert, together with board member Aldous Huxley, formed the Harvard Psilocybin Project, to document the effects of psilocybin on human consciousness. Recall that in that time, neither LSD nor psilocybin was classified substances. The team ordered psilocybin from the Sandoz lab, where Albert Hofmann had developed the process to derive the compound synthetically \cite{melechi_psychedelia_1997}.
 
 With a steady supply of psychoactive potion on tap, Leary and Alpert administered the drug to volunteers from the Harvard student body, other researchers, prison inmates, and a group of divinity students. Of the last group, the famed ``Good Friday'' experiment, the Project researchers dosed the experimental group with psilocybin while attending a Good Friday service in a private chapel. The effect from the combined influence of intense religious ceremony and iconography, with psychoactive neurochemicals yielded a dramatic emotional response in the experimental group. Leary claimed that with entheogens \enquote{spiritual ecstasy, religious revelation, and union with God were now directly accessible \cite{mansnerus_timothy_1996}.}
 
-Controversy followed the program in short order. The team's experiments suffered from unconventional design, such as non-random subject selection, and lacked proper control groups. More damning was the practice of the researchers taking the drugs themselves along with the subjects. Intradepartmental opponents of the project charged that the studies ``resembled cocktail parties,'' and that their data collection was sloppy.
+Controversy followed the program in short order. The team's experiments suffered from unconventional designs, such as non-random subject selection, and lacked proper control groups. More damning was the practice of the researchers taking the drugs themselves along with the subjects. Intradepartmental opponents of the project charged that the studies ``resembled cocktail parties,'' and that their data collection was sloppy.
 
 The project ended in under three years. Harvard denied Leary a new contract after he failed teaching obligations, preferring to travel during that semester. Alpert was fired for giving drugs to undergrads, which was against the standing agreement with the school. Ultimately both were banned from academia. In short order, Alpert went to India to study at the Kainchi ashram, where he accepted a new name, Ram Dass, ``servant of God.'' Subsequently, he made a lifetime commitment to the spiritual path of non-exogenous self-induced ecstasy via disciplined meditation and yogic practice. He published a seminal yogi guidebook, Be Here Now, in 1971, often described as a countercultural bible. He continues to publish books and produce media content and events with the Be Here Now Network.
 
@@ -596,9 +620,9 @@ The chilling effect of government embargo was hardly a new chapter for psychedel
 
 We need look no further for clear examples of this pattern than in colonial Mesoamerica. In what is now Mexico and Central America, peoples from the advanced pre-Columbian civilizations of the Aztec, Toltec, Maya, Olmec, Zapotec, and Mixtec shared common cultural traits of ritualism, spirituality, writing, arts, and architecture \cite{gallenkamp1959maya}. For the Nahua people, of whom Aztec are the best known, mushrooms were called \emph{teonanacatl}, ``God's flesh.''  Gordon Wasson makes the astute observation that it must have been very uncomfortable for the visiting Christians who claim holy Transabstantiation from the ritual consumption of dry bread, to coexist in the presence of these pagan people who make a similar claim with mushrooms. To magnify the tension, where the pious Christian must rely on faith of miracle conversion of inert matter into the flesh of Christ, teonanacatl would reliably produce holy vision and ecstasy beyond deniability \cite{wasson1980wondrous}.
 
-With the arrival of the Spanish conquerors, came the spirit of the Inquisition. As the Catholic Europeans took control in the New World, it was inevitable that gunpowder, steel, the lust for gold, and exotic export, and the intolerance for dissenting religious perspectives, would result in a continent-wide suppression of the mushroom cults of Mesoamerica. It was the secretive mountain-dwelling Mixteca of central Mexico who managed to maintain continuity with mushroom lore for 400 years where Gordon Wasson made his discovery. 
+With the arrival of the Spanish conquerors, came the spirit of the Inquisition. As the Catholic Europeans took control in the New World, it was inevitable that gunpowder, steel, the lust for gold, and exotic export, and the intolerance for dissenting religious perspectives, would result in a continent-wide suppression of the mushroom cults of Mesoamerica \cite{gallenkamp_maya_1959}. It was the secretive mountain-dwelling Mixteca of central Mexico who managed to maintain continuity with mushroom lore for 400 years where Gordon Wasson made his discovery. 
 
-The appetite for consciousness repression repeats throughout time, making the more dramatic claims of First wavers like Timothy Leary, that authority disdains independent thinking for the hoi polloi, a credible possibility. Counterculture revolutionaries find easy fuel for their revolts with sweeping generalizations such as this---sometimes with good reason. However, the relationship to knowledge and power is a complex web of technology and cultural rite. 
+The tendency for the prohibition of intoxicants repeats throughout time, making the more dramatic claims of First-Wavers like Timothy Leary, that authority disdains independent thinking for the hoi polloi, a credible possibility. Counterculture revolutionaries find easy fuel for their revolts with claims of ruling-class domination and control [Leary: \enquote{Civilization is unbearable, but it is less unbearable at the top.}, \enquote{Think for yourself and question authority.}] Generalizations in this vein make reasonable points, however, the relationship to knowledge and power is a complex web of technology and cultural rite. 
 
 Until the religious evolution of Paganism around 12,000 years ago, the technique to access sacred knowledge was likely the domain of shamanism. Shamans were spiritual specialists who were believed to achieve powers through trance or ecstatic religious experience. The word shaman derives from the northern Siberian Tungus word \emph{\u{s}aman}, the nominative form of the verb \emph{\u{s}a}, meaning ``to know.'' A shaman is one who knows \cite{athope_early_nodate}. Archaeological discoveries throughout the Eurasian continent have uncovered burial sites dating back as far as 30,000 years demonstrating preferential burial for certain people with significant power artifacts, indicating the occupant likely a shaman.
 
@@ -617,15 +641,15 @@ Terance McKenna goes further, crediting Shamanism as a million years old religio
 {Shamanism is not some obscure concern of cultural anthropologist: shamanism is how religion was practiced for its first million years. Up until about 12,000 years ago, there was no other form of religion on this planet; that was how people attained some kind of access to the sacred\ldots shamanism then becomes about technique \cite{noauthor_terence_nodate}.}
 \end{quote}
 
-The work of Terance McKenna delivers a nigh liturgy for discussing the full spectrum of ecstatic consciousness while staying grounding in scientific inquiry. His writings and lectures offer spectacular insight into the prehistoric epochs of shamanism, and simultaneously provide a critical bridge between the psychedelic First Wave movement, through the underground Second Wave, connecting with the reemergence of tolerance for what might be considered the Third Wave. McKenna was aged ten when Wasson's 1957 Life magazine article made him aware of the existence of magic mushrooms. With a budding interest in psychology, he also had read Carl Jung's book Psychology and Alchemy that same year. He had a reputation for expertise in ethnomycology, ethnobotany, and metaphysics and received his official papers from the University of California Berkeley for degrees in ecology, shamanism, and conservation of natural resources. A prolific psychonaut, McKenna traveled the globe in search of both novel psychoactive, and the ancient cultures that employed them.
+The work of Terance McKenna delivers a nigh liturgy for discussing the full spectrum of ecstatic consciousness while staying grounding in scientific inquiry. His writings and lectures offer spectacular insight into the prehistoric epochs of shamanism, and simultaneously provide a critical bridge between the psychedelic First Wave movement, through the underground Second Wave, connecting with the reemergence of tolerance for what might be considered the Third Wave. McKenna was aged ten when Wasson's 1957 Life magazine article made him aware of the existence of magic mushrooms. With a budding interest in psychology, he also had read Carl Jung's book Psychology and Alchemy that same year. He had a reputation for expertise in ethnomycology, ethnobotany, and metaphysics and received his official papers from the University of California Berkeley for degrees in ecology, shamanism, and conservation of natural resources. A prolific psychonaut, McKenna traveled the globe in search of both novel psychoactives, and the ancient cultures that employed them.
 
-The practice of shamanic ritual demonstrates a variety of methods to make contact with the ecstatic self. Drumming, manipulation of breath, physical ordeals, and even sexual-abstinence are all credible techniques for entering the trance state for shamanic work. Psychoactive plant medicines remain the most dramatic and reliable for producing ecstatic visions. They are useful for establishing altered states of consciousness wherein insights and novel points of view may be gleaned by disrupting ordinary sensations and perceptions. The benefits of naturally occurring medicines would extend beyond mere cognitive trickery. Upon discovering certain plants, our remote ancestors would discover drugs that could suppress appetite, diminish pain, supply sudden bursts of energy, and boost immunity. Ceremonially, people would have used altered states in a ritualized way to carry symbolic messages, as rites of passage, and to determine leadership roles among bands.
+The practice of shamanic ritual demonstrates a variety of methods to make contact with the ecstatic self. Drumming, manipulation of breath, physical ordeals, and even sexual abstinence are all credible techniques for entering the trance state for shamanic work. Psychoactive plant medicines remain a dramatic and reliable source for producing ecstatic visions. They are useful for establishing altered states of consciousness wherein insights and novel points of view may be gleaned by disrupting ordinary sensations and perceptions. The benefits of naturally occurring medicines would extend beyond mere cognitive trickery. Upon discovering certain plants, our remote ancestors would discover drugs that could suppress appetite, diminish pain, supply sudden bursts of energy, and boost immunity. Ceremonially, people would have used altered states in a ritualized way to carry symbolic messages, as rites of passage, and to determine leadership roles among bands.
 
-Of interest to this writing is the relationship developed between shamanic plant doctors and their patients, for it is often the shaman, the doctor, who takes the medicine, not the patient. This pattern repeatedly emerges throughout cultures and times, including with the modern scientists, who, against the common practice of their creed, also take the drugs. This seems odd to a modern pharmaceutical culture such as present in the western industrialized world. If a patient has hypertension, her doctor may prescribe a daily maintenance drug, perhaps an angiotensin II receptor blocker; by no means would anyone expect the doctor to take it. Similarly, SSRI drugs (which owe in large part their development to the discovery of psychoactive in nature), used for mood disorders like depression and anxiety, are not taken by the pharmacists who produce them to benefit the patients who request them.
+Of interest to this writing is the relationship developed between shamanic plant doctors and their patients, for it is often the shaman, the doctor, who takes the medicine, not the patient \cite{eliade_shamanism_2004}. This pattern repeatedly emerges throughout cultures and times, including with the First Wave scientists, who, against the common practice of their creed, also take the drugs. This seems odd to a modern pharmaceutical culture such as present in the western industrialized world. If a patient has hypertension, her doctor may prescribe a daily maintenance drug, perhaps an angiotensin II receptor blocker; by no means would anyone expect the doctor to take it. Similarly, SSRI drugs (which owe in large part their development to the discovery of psychoactive in nature), used for mood disorders like depression and anxiety, are not taken by the pharmacists who produce them to benefit the patients who request them.
 
 This is not to say that ingesting medicines was the exclusive domain of the shamans. Drugs were taken by initiates, given to the sick and dying, and used in individual and group ceremonies. Shamans maintain not only the practical knowledge of how to harvest plants and prepare brews but also the expertise to guide her clan in and through the ceremonies. They functioned much like a psychotherapist in this way---again calling to mind the patter witnessed in psychedelic psychotherapy as practiced in the \nth{20} century. 
 
-A deep view of shamanism is far beyond the scope and intention of this writing. The primary takeaway from the discussion herein is three-fold. One, that humans have always sought personal commune with the divine unknown, no-more exemplified in the embrace of consciousness free-fall into ecstatic altered mind. Secondly, that connection is a path of transpersonal procession; from the defiantly confident ego, through uncertainty, into a reference world simultaneously subjective and objective, shared and unknown. Thirdly, the shaman serves as a knowledgeable expert and guide, shaping and directing the course of the ecstatic journey.
+A deep view of shamanism is far beyond the scope and intention of this writing. The primary takeaway from the discussion herein is three-fold. One, that humans have always sought personal commune with the divine unknown, no-more exemplified in the embrace of consciousness free-fall into ecstatic altered mind. Secondly, that connection is a path of transpersonal procession; from the defiantly confident ego, through uncertainty, and into a reference world simultaneously subjective and objective, shared and unknown. Thirdly, the shaman serves as a knowledgeable expert and guide, shaping and directing the course of the ecstatic journey.
 
 
  
@@ -649,7 +673,7 @@ Mass culture conditions individuals to be wary of deviation from the norm. While
 
 McKenna's contentious notions aside, there are volumes of studies on the possible roles played by culturally transmitted conformity, in evolutionary biology as well as social psychology. If a member of your migrating band eats a strange plant along the trail, then keels over dead, perhaps negative reinforcement avoidance is a good starting point for your would-be cultural heritage.
 
-It is well accepted that the astonishing advances of human knowledge owe many tributes to the sometimes dangerous exploration of the unknown. Simultaneously, there exists ample anecdote of cultural knowledge that is simply disregarded due to prejudice or ignorance. How much have non-western cultures, historical and concurrent, already known about the mind, the self, and the possible trans-selves? Modern man is prone to conceit and ethnocentrism, especially when addressing anything that appears to belong to the realm of material science.
+It is well accepted that the astonishing advances of human knowledge owe many tributes to the sometimes dangerous exploration of the unknown. Simultaneously, there exists ample anecdote of cultural knowledge that is simply disregarded due to prejudice or ignorance. How much have non-western cultures, historical and concurrent, already known about the mind, the self, and the possible trans-selves? Modern man is arguably prone to conceit and ethnocentrism, especially when addressing anything that appears to belong to the realm of material science.
 
 William James (1842-1910), one of the architects of TP, made his mark at Harvard, helping to establish the psychology department in the late \nth{19} century. James is a colorful character in the history of psychology, studying first painting, before enrolling at Harvard to study chemistry and anatomy. The discipline of psychology was not discrete, but his interest in behavior lead him to study the mind and the nascent emergent field. \enquote{This is no science; it is only the hope of science,} he wrote in his 1892 survey, Psychology: Briefer Course. 
 
@@ -689,14 +713,14 @@ Eventually, in this reading, the elephant becomes too big for the room. The 1970
 
 \begin{snugshade*}
 {Hofmann wrote a letter in 2007 to Jobs at the behest of his friend Rick Doblin, who runs MAPS [dedicated to studying the medical and psychiatric benefits of psychedelic drugs.]\\
-Founded in 1986, the Multidisciplinary Association for Psychedelic Studies (MAPS) is a 501(c)(3) non-profit research and educational organization that develops medical, legal, and cultural contexts for people to benefit from the careful uses of psychedelics and marijuana.}\\
+Founded in 1986, the \ac{MAPS} is a 501(c)(3) non-profit research and educational organization that develops medical, legal, and cultural contexts for people to benefit from the careful uses of psychedelics and marijuana.}\\
 \emph{Healthy Normals}
 \end{snugshade*}
 
 \begin{quote}
 \textit{{Dear Mr. Steve Jobs,\\
 Hello from Albert Hofmann. I understand from media accounts that you feel LSD helped you creatively in your development of Apple computers and your personal spiritual quest. I'm interested in learning more about how LSD was useful to you.
-I'm writing now, shortly after my 101st birthday, to request that you support Swiss psychiatrist Dr. Peter Gasser's proposed study of LSD-assisted psychotherapy in subjects with anxiety associated with life-threatening illness. This will become the first LSD-assisted psychotherapy study in over 35 years.
+I'm writing now, shortly after my 101st birthday, to request that you support Swiss psychiatrist Dr.~Peter Gasser's proposed study of LSD-assisted psychotherapy in subjects with anxiety associated with life-threatening illness. This will become the first LSD-assisted psychotherapy study in over 35 years.
 I hope you will help in the transformation of my problem child into a wonder child.\\
 Sincerely,\\
 A. Hofmann}}
@@ -716,9 +740,9 @@ Human psychopharmacology of N,N-dimethyltryptamine
 
 In April 2019, The Imperial College of London launched the world's first Centre for Psychedelic Research. Later that same year, Johns Hopkins University School of Medicine announced the opening of The Center for Psychedelic and Consciousness Research. In a statement issued by Roland Griffiths, the Hopkins center director and a professor of behavioral biology, \enquote{The center's establishment reflect a new era of research in therapeutics and the mind through studying this unique and remarkable class of pharmacological compounds.}
 
-In both of these universities, as well as Harvard, Yale, University of New Mexico, and others, research on the effects of psychedelic drugs on the conscious have been quietly conducted since Rick Strassman's seminal study at the University of New Mexico in 1996, Human psychopharmacology of N,N-dimethyltryptamine. In the meantime, several formal groups, academic, non-profit, and even social collectives, have formed to support the continued study and therapy of altered psychedelic mental states.  Yale Psychedelic Science Group, Multidisciplinary Association for Psychedelic Studies  , the Portland Psychedelic Society, Toronto Psychedelic Society, just to name a few.
+In both of these universities, as well as Harvard, Yale, University of New Mexico, and others, research on the effects of psychedelic drugs on the conscious have been quietly conducted since Rick Strassman's seminal study at the University of New Mexico in 1996, Human psychopharmacology of N,N-dimethyltryptamine. In the meantime, several formal groups, academic, non-profit, and even social collectives, have formed to support the continued study and therapy of altered psychedelic mental states.  Yale Psychedelic Science Group, \ac{MAPS}, the Portland Psychedelic Society, Toronto Psychedelic Society, just to name a few.
 
-The Nielson Lab at the University of Minnesota conducts multidisciplinary research in the fields of neurobiology, psychiatry and informatics to treat trauma. Dr. Nielson's recent research into neurological mechanisms of altered states of consciousness and their role in promoting neuroplasticity and wellness in healthy subjects, funded in part by local community donations \cite{noauthor_nielson_nodate}. The network graph [see figure \ref{fig:therapy}] is a model of overlapping symptoms of trauma, and various psychedelic therapies that have published research suggesting a therapeutic benefit.
+The Nielson Lab at the University of Minnesota conducts multidisciplinary research in the fields of neurobiology, psychiatry and informatics to treat trauma. Dr.~Nielson's recent research into neurological mechanisms of altered states of consciousness and their role in promoting neuroplasticity and wellness in healthy subjects, funded in part by local community donations \cite{noauthor_nielson_nodate}. The network graph [see figure \ref{fig:therapy}] is a model of overlapping symptoms of trauma, and various psychedelic therapies that have published research suggesting a therapeutic benefit.
 
 \begin{figure}
 	\centering
@@ -727,7 +751,7 @@ The Nielson Lab at the University of Minnesota conducts multidisciplinary resear
 	\label{fig:therapy}
 \end{figure}
 
-Tolerance of psychedelics for treatment and personal development is leading to changes in both law enforcement and drug policy. In recent years, the California Institute of Integral Studies has offered a certificate program in Psychedelic-Assisted Therapies and Research. CIIS provides public education about psychedelic research and the use of psychedelics in psychotherapy, as well as teaching on topics such as creativity enhancement, consciousness studies, comparative mysticism, well-being enrichment and harm reduction \cite{noauthor_ciis_nodate}.
+Tolerance of psychedelics for treatment and personal development is leading to changes in both law enforcement and drug policy. In recent years, the \ac{CIIS} has offered a certificate program in Psychedelic-Assisted Therapies and Research. \ac{CIIS} provides public education about psychedelic research and the use of psychedelics in psychotherapy, as well as teaching on topics such as creativity enhancement, consciousness studies, comparative mysticism, well-being enrichment and harm reduction \cite{noauthor_ciis_nodate}.
 
 \clearpage
 
@@ -735,12 +759,22 @@ Tolerance of psychedelics for treatment and personal development is leading to c
 % --------------------------------------------------------------------------
 % -- CHAP 3 --
 \chapter{Crossing Reality}
-\noindent
-{%
-\setlength{\fboxsep}{0pt}%
-\setlength{\fboxrule}{1.5pt}%
-\fbox{\includegraphics[width=\linewidth]{reality_head.png}}%
-}%
+\captionsetup{labelformat=empty}
+\captionsetup{font=footnotesize}
+\begin{figure}[h!]
+	\centering
+	\noindent
+	{%
+	\setlength{\fboxsep}{0pt}%
+	\setlength{\fboxrule}{1.5pt}%
+	\fbox{\includegraphics[width=\linewidth]{reality_head.png}}%
+	}%
+	\caption[Art by Mikhail Vrubel, ``The Demon Seated'', 1890]{\textit{``The Demon Seated''}} 
+	\label{fig:ch4}
+\end{figure}
+\captionsetup{labelformat=simple}
+\captionsetup{font=small,labelfont=bf}
+
 \label{Chapter:CrossingReality}
 \epigraph {You are the universe experiencing itself.}{Alan Watts}
 
@@ -748,7 +782,17 @@ Tolerance of psychedelics for treatment and personal development is leading to c
 
 It may be deduced that it is the interplay of Self-in-World, and the matter in which that relationship is observed via each observer's unique perspective, that leads to transcendent experiences. If this is so, is it also possible to direct the development of strictly external sensations to elicit similar outcomes? This paper explores the use of \textit{\ac{XR}} to craft uniquely adapted multi-sensory ecstatic experiences.
 
-Cross reality is a technique that makes use of technologies of virtualization---sensory simulation of a believable world---and interaction with adaptive data processing, to include any accessible global data and real-time characteristics of the user. Unlike AR augmented reality, XR employs, among other features, a degree of artificial intelligence (AI). Objects in XR have adaptive routines---situational awareness. For example, an AR cat can sit on the floor, the dinner table, or in the center of your plate---it is ambivalent to its lack of decorum. If the cat were a denizen of the \ac{XR} universe, it might instead hack into your \textit{\ac{IoT}} doorbell to get you up from the dinner table so it can 'eat' your sushi while you are distracted.
+Current technologies of virtualization--sensory simulation of a believable world---exist along a continuum of \textit{\ac{MR}}. On one end of the scale, \textit{\ac{VR}} completely replaces the ``normal world'' with mediated simulation. At the other pole, \textit{\ac{VR}} makes targeted changes to the environment, frequently adding features like textual data, signs or characters, integrating with the user's world as a composite. 
+
+\ac{XR} as a technique makes use of the \ac{MR} spectrum and then further interacts within the composite with adaptive data processing, to include any accessible global data and real-time characteristics of the user, establishing a relationship between the three parts of \emph{user}, \emph{world}, and \emph{constructs}. Unlike \ac{AR}, \ac{XR} employs a degree of \textit{\ac{AI}}, or, as the author prefers, \textit{\ac{SI}}. Objects in XR have adaptive routines---situational awareness. For example, an AR cat can sit on the floor, the dinner table, or in the center of your plate---it is ambivalent to its lack of decorum. If the cat were a denizen of the \ac{XR} universe, it might instead hack into your \textit{\ac{IoT}} doorbell to get you up from the dinner table so it can `eat' your sushi while you are distracted. Refer to figure \ref{fig:mr} for clarity.
+
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=.81\linewidth]{mr.png}
+	\caption{Conceptual model for mediated reality classes}
+	\label{fig:mr}
+\end{figure}
 
 The example seems perhaps glib but is never-the-less appropriate. Harnessing the potentially limitless data of the internet, distributed or \emph{edge computing}, and immersive human interface, \ac{XR} enables the technological animation of the environment as character. The state of technology today stands at the threshold of a new paradigm in shaping reality.
 
@@ -770,23 +814,43 @@ But here and now, at this moment, your awareness reveals that you are downwind o
 
 \epigraph{Information is just bits of data. Knowledge is putting them together. Wisdom is transcending them.}{Ram Dass}
 
-Excluding periods of unconsciousness or trauma, most people have the perception of a reasonably continuous storyline without breaks and inconsistencies. Like a comet, details of the past fade to transparency, the further down the tail one traces from the present. 
+Excluding periods of unconsciousness or trauma, most people have the perception of a continuous reality storyline with minimal inconsistencies. Moments of cognitive inconsistency, to include the popular concept of ``cognitive dissonance'', do not make a person's perception of reality any less valid. Similarly, a tolerant society makes room for a multiplicity of opinions to coexist simultaneously in a socially well-adjusted population. Is South Chicago a ``nice'' place, or a ``violent hell-hole?'' We have learned to make room for incompatible  possibilities to co-exist as opinions distributed among individuals. With that granted, we do hold that individual judgments on reality do not vacillate whimsically or erratically in a short span of time without clear reason. For those people who do struggle maintaining a consisent handle on ``what is real'', many will consider their difficulty a strong sign of mental illness or psychosis.
 
-Past experiences are more than just records of deeds and actions gone by; they are also filters to the present---providing an interpretation of our symbolic representation of the present and future.
+Time and saliency order experiences in a complex web of influence and priority. Like a comet, details of the past fade to transparency, the further down the tail one traces from the present. Past experiences are more than just records of deeds and actions gone by; they are also filters to the present---furnishing a symbolic representation of what is `self', what is `real', and tempering our expectation for outcomes in a `future'. These filters are in part genetic and physiological, but they are also influenced by our experiences and our understanding of the world. There is a vast array of sensory data in the world. Sights, sounds, vibrations. Our sensory systems are limited and we are not able to fully process the world around us. To compensate, our cognitive system fills in missing details and organizes all the disparate sensory streams into a unified perception of the world. Often our view of the future is biased by conscious and unconscious factors at play.
 
-This bias projection, or bias confirmation, is a vital component in delivering the conscious being's perseverant need for consistency
+What is it that is recorded into memory? What is a piece of memory or data, and how does it recall itself? Thanks to the recent efforts in neuroscience from researchers like Nobel Laureate John O'keefe, one part of the answer is \emph{pattern completion }initiated in the hippocampus. To enable efficient processing of raw sensory data, organisms chunk data into collections of symbols---a process of \emph{encoding}---to optimize decision response time. Humans, arguably the most advanced thinking organisms (we seem to think so), exploit this optimization to an extreme, encoding countless details of not only their physical environments, but also elaborate abstract constructs, including long term goals, and complex social relationships.
+
+Parsing symbols into collections as a means of interpreting the world is a process of macro visualization. Focusing instead at the smallest instance of reality, what is the least divisible component of perception? In his book, Mind and the World Order (1929), the philosopher Clarence Irving Lewis was the first to use the term \emph{qualia} as the fundamental unit of conscious experience. Deriving from Latin qu\={a}lis, meaning ``of what sort'' or ``of what kind''. The ``blueness'' of a blue sky, is an instance of qualia.
+ 
+\emph{Bias projection}, or \emph{bias confirmation}, is a vital component in delivering the conscious being's perseverant need for consistency. And yet the experiences of \ac{ASC} are anything but consistent. Accounts of ecstatic mind from users of DMT report an immediate departure from all expectation, into complete immersion in an ineffable universe.
+
+There is room here for endless recursion and philosophical cul-de-sac. The mission of EXR is to play a role in transpersonal ecstasy by crafting features of an intelligently mediated phenomenological world. How we perceive and code the environment is far from perfect, however this also provides an opportunity for using technology to augment our understanding of reality in real-time. To build ecstatic experiences influenced by autonomous agents more knowing and rational than our own minds. To provide both logical and emotional understanding of circumstances.
 
 \clearpage
 
 % --------------------------------------------------------------------------
 % -- CHAP 3 --
 \chapter{Building Reality}
+	%\caption[hello]{voyager} %? works but adds 'Figure' to the doc
+	%\caption*{} %suppresses 'Figure'
+
+\captionsetup{labelformat=empty}
+\captionsetup{font=footnotesize}
+\begin{figure}[h!]
+	\centering
 \noindent
 {%
 \setlength{\fboxsep}{0pt}%
 \setlength{\fboxrule}{1.5pt}%
 \fbox{\includegraphics[width=\linewidth]{build_head.png}}%
 }%
+	\caption[Art by Kappi, untitled, (Psychonaut)]{\textit{PSYCHONAUT}} 
+	\label{fig:ch4}
+\end{figure}
+
+\captionsetup{labelformat=simple}
+\captionsetup{font=small,labelfont=bf}
+
 \label{Chapter:BuildingReality}
 \epigraph {The mind is its own place, and in itself can make a heaven of hell, a hell of heaven\ldots}{John Milton, Paradise Lost}
 
@@ -921,12 +985,12 @@ The visual system dominates human sensory processing. A majority of the cortex i
 
 One dramatic weakness for input/output systems in current technology is in haptics, or tactile, feedback. The human proprioceptive sense is also taken for granted. Notable in the report of ecstatic experience, is whole-body physiological response. A very compelling EXR simulation would benefit from immensely from tapping into that landscape. 
 
-In the present era, developments for more sophisticated and wider bandwidth controls are envisioned or under literal development. The leading \textit{\ac{BMI}} peripheral is Elon Musk's Neuralink. The device makes use of cortical implant technology to insert arrays of electrodes \SI{5}{\micro\meter} in width and numbering up to 3,072 electrodes per array. 
+In the present era, developments for more sophisticated and wider bandwidth controls are envisioned or under literal development. The leading \textit{\ac{BMI}} peripheral is Elon Musk's Neuralink. The device makes use of cortical implant technology to insert arrays of electrodes \SI{5}{\micro\meter} in width and numbering up to 3,072 electrodes per array. If such an array were placed on the motor cortex one could think of movement to control an avatar, an exoskeleton, or even a robotic limb. If the array were placed on the fusiform face area it could be possible to decipher who someone was thinking about. The possibilities are limitless.
 
 
 \subsection{data}
 
-As expected, EXR makes use of all the features of a connected world. Whether a future generation of wireless, or minimally-tethered, the compute demands for a responsive and aware sensory simulator will be considerable. Accessing parallel computing in a local network, or the cloud, with historic user profile-based machine learning will be essential. \emph{Edge computing }is a current term that captures the demand cycle transport of I/O for connected devices in the current buzz lingo of disruptive tech.
+As expected, EXR makes use of all the features of a connected world. At the time of this writing, 5G wireless infrastructure is being implemented across the Unites States. Whether by way of 5G or a future generation of wireless, or with a minimally-tethered platform, the compute demands for a responsive and aware sensory simulator will be considerable. Accessing parallel computing in a local network, or the cloud, with historic user profile-based machine learning will be essential. \emph{Edge computing }is a current term that captures the demand cycle transport of I/O for connected devices in the current buzz lingo of disruptive tech.
 
 To create a believable personalized immersion and break into the world of ecstasy, an ecstatic cross reality platform will be aware of the user's biometrics and brainwaves. Eye movements, respiration, and pulse are high-value inputs. \textit{\ac{EEG}} or similar conceptual \ac{BMI} like Neuralink would enable advanced responses and awareness.
 
@@ -1098,14 +1162,12 @@ Every conscious being owes its miraculous existence the opportunity to be authen
 \renewcommand\bibname{References} % Relabels bibliography title as "REFERENCES"
 \addcontentsline{toc}{chapter}{\textsc{\bibname}} % Adds to table of contents
 \bibliographystyle{plain}  % Sets style, plain is fine for this
-\bibliography{exr-zot}  % Name of bibliography file containing your references. It is best practice to have a separate file, as it makes it easier to share your references, make derivative works, or use the references from a prior work (e.g a prior paper that your thesis work is building on).
+\bibliography{exr-unk}  % Name of bibliography file containing your references. It is best practice to have a separate file, as it makes it easier to share your references, make derivative works, or use the references from a prior work (e.g a prior paper that your thesis work is building on).
 
 % Examples of citing GitHub repositories:
 %   http://academia.stackexchange.com/a/14015
 %   https://github.com/blog/1840-improving-github-for-science
 %   https://guides.github.com/activities/citable-code/
-%   https://github.com/GhostofGoes/uidaho-masters-thesis/
-%   Wait, that last one is recursive...oh no. RIP poorly programmed web crawling spider.
 
 
 

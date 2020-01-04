@@ -189,12 +189,12 @@
 	\end{center}
 	\vspace{10pt}
 	
-This thesis of \@author, submitted for the degree of \@degree\ with a Major in \@major\ and titled ``\@title," has been reviewed in final form. Permission, as indicated by the signatures and dates below is now granted to submit final copies for the College of Graduate Studies for approval.\par
+This thesis of \@author, submitted for the degree of \@degree\ with a Major in \@major\ and titled ``\@title,'' has been reviewed in final form. Permission, as indicated by the signatures and dates below is now granted to submit final copies for the College of Graduate Studies for approval.\par
     
 	\vspace{1in}
 	\begin{table}[ht]
 		\centering
-		\begin{tabular}{p{1.5in}ll}
+		\begin{tabular}{p{1.7in}ll}
 			Advisor:                  & \makebox[2.5in]{\hrulefill}   & \makebox[1.5in]{\hrulefill}\\
 							          & \@advisor					  & Date\\[0.5in]
 			Committee \nohyphens{Members:}        & \makebox[2.5in]{\hrulefill}   & \makebox[1.5in]{\hrulefill}\\
